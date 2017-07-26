@@ -1,0 +1,239 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    /* Database Server */
+    "databaseserver-name": {
+      "value": "sportsperfdatabase"
+    },
+    "databaseserver-locationName": {
+      "value": "West US"
+    },
+    "databaseserver-kind": {
+      "value": "v12.0"
+    },
+    "databaseserver-version": {
+      "value": "12.0"
+    },
+    "databaseserver-admin": {
+      "value": "sportsperfadmin"
+    },
+    "databaseserver-password": {
+      "value": "NP_B(=`p:3Jb&E#K" /* TODO: Specify DB password */
+    },
+    /* Database Master */
+    "databasemaster-name": {
+      "value": "sportsperfdatabase/master"
+    },
+    "databasemaster-kind": {
+      "value": "v12.0,system"
+    },
+    "databasemaster-location": {
+      "value": "West US"
+    },
+    "databasemaster-edition": {
+      "value": "Basic"
+    },
+    "databasemaster-status": {
+      "value": "Online"
+    },
+    "databasemaster-collation": {
+      "value": "SQL_Latin1_General_CP1_CI_AS"
+    },
+    "databasemaster-maxSizeBytes": {
+      "value": "2147483648"
+    },
+    "databasemaster-requestedServiceObjectiveName": {
+      "value": "Basic"
+    },
+    "databasemaster-defaultSecondaryLocation": {
+      "value": "East US"
+    },
+    "databasemaster-containmentState": {
+      "value": 2
+    },
+    "databasemaster-readScale": {
+      "value": "Disabled"
+    },
+    /* Database Main */
+    "databasemain-name": {
+      "value": "sportsperfdatabase/sportsperf"
+    },
+    "databasemain-kind": {
+      "value": "v12.0,system"
+    },
+    "databasemain-location": {
+      "value": "West US"
+    },
+    "databasemain-edition": {
+      "value": "Basic"
+    },
+    "databasemain-status": {
+      "value": "Online"
+    },
+    "databasemain-collation": {
+      "value": "SQL_Latin1_General_CP1_CI_AS"
+    },
+    "databasemain-maxSizeBytes": {
+      "value": "2147483648"
+    },
+    "databasemain-requestedServiceObjectiveName": {
+      "value": "Basic"
+    },
+    "databasemain-defaultSecondaryLocation": {
+      "value": "East US"
+    },
+    "databasemain-containmentState": {
+      "value": 2
+    },
+    "databasemain-readScale": {
+      "value": "Disabled"
+    },
+
+    /* TODO: Uri and Storage key for .bacpac file in your Azure storage account */
+    "SqlDataImportStorageKeyType": {
+      "value": "Primary"
+    },
+    "SqlDataImportStorageKey": {
+      "value": "avfynM2cs2j4MdSy8dKTi9rHkP1Obkq7tZESmDxPWy8bC3WaGPdmG1pYD3wMSTzT+A0kQArTJ7heiwJCLrlu2g=="
+    },
+    "SqlDataImportStorageUri": {
+      "value": "https://sppdataloaderstorage.blob.core.windows.net/248b32b8-11a0-4a65-8f2d-ec203882d475-file-staging/SPP-Schema.bacpac"
+    },
+
+    /* Database Firewall */
+    "databasefirewall-kind": {
+      "value": "v12.0"
+    },
+    "databasefirewall-location": {
+      "value": "West US"
+    },
+
+    /* App Service */
+    "appserviceconfig-name": {
+      "value": "sportsperf-api/web"
+    },
+    "appservice-name": {
+      "value": "sportsperf-api"
+    },
+    "appservice-hostingPlanName": {
+      "value": "sportsperf-api"
+    },
+    "appservice-location": {
+      "value": "West US"
+    },
+    "appservice-hostingEnvironment": {
+      "value": ""
+    },
+    "appservice-websiteNodeDefaultVersion": {
+      "value": "6.9.1"
+    },
+    "appservice-defaultCultureCode": {
+      "value": "en-US"
+    },
+    "appservice-configLocation": {
+      "value": "West US"
+    },
+    "appservice-configNumberOfWorkers": {
+      "value": 1
+    },
+    "appservice-configNetFrameworkVersion": {
+      "value": "v4.6"
+    },
+    "appservice-configPhpVersion": {
+      "value": "5.6"
+    },
+    "appservice-configPythonVersion": {
+      "value": ""
+    },
+    "appservice-configNodeVersion": {
+      "value": ""
+    },
+    "appservice-configLinuxFxVersion": {
+      "value": ""
+    },
+    "appservice-configRequestTracingEnabled": {
+      "value": false
+    },
+    "appservice-configRemoteDebuggingEnabled": {
+      "value": false
+    },
+    "appservice-configHttpLoggingEnabled": {
+      "value": false
+    },
+    "appservice-configLogsDirectorySizeLimit": {
+      "value": 35
+    },
+    "appservice-configDetailedErrorLoggingEnabled": {
+      "value": false
+    },
+    "appservice-configUse32BitWorkerProcess": {
+      "value": true
+    },
+    "appservice-configwebSocketsEnabled": {
+      "value": false
+    },
+    "appservice-configAlwaysOn": {
+      "value": true
+    },
+    "appservice-configAppCommandLine": {
+      "value": ""
+    },
+    "appservice-configManagedPipelineMode": {
+      "value": 0
+    },
+    "appservice-configVirtualPath": {
+      "value": "/"
+    },
+    "appservice-configPhysicalPath": {
+      "value": "site\\wwwroot"
+    },
+    "appservice-configPreloadEnabled": {
+      "value": true
+    },
+    "appservice-repoURL": {
+      "value": "https://github.com/Microsoft/sportsperformance.git"
+    },
+    "appservice-branch": {
+      "value": "pop" /* This is case sensitive */
+    },
+
+    /* App Service Plan */
+    "appserviceplan-name": {
+      "value": "sportsperf-apiplan"
+    },
+    "appserviceplan-location": {
+      "value": "West US"
+    },
+    "appserviceplan-sku": {
+      "value": "Standard"
+    },
+    "appserviceplan-skuCode": {
+      "value": "S1"
+    },
+    "appserviceplan-skuSize": {
+      "value": "S1"
+    },
+    "appserviceplan-skuFamily": {
+      "value": "S"
+    },
+    "appserviceplan-skuCapacity": {
+      "value": 1
+    },
+    "appserviceplan-workerSize": {
+      "value": "0"
+    },
+    "appserviceplan-workerSizeId": {
+      "value": "0"
+    },
+    "appserviceplan-numberOfWorkers": {
+      "value": "1"
+    },
+    "appserviceplan-hostingEnvironment": {
+      "value": ""
+    },
+    "appserviceplan-reserved": {
+      "value": false
+    }
+  }
+}

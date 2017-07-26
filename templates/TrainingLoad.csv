@@ -1,0 +1,513 @@
+Date,Rating,Duration,Load,Category,FullName
+6/30/2016,0,0,0,Off,Reyna Swanson
+6/30/2016,5,120,600,Team Training,Tasha Conner
+6/30/2016,7,75,525,Team Training,May Garner
+6/30/2016,7,90,630,Team Training,Cassandra White
+6/30/2016,3,90,270,Team Training,Josie Merrill
+6/30/2016,6,120,720,Team Training,Isabel Quinn
+6/30/2016,6,120,720,Team Training,Isabel Quinn
+6/30/2016,6,80,480,Team Training,Megan Britt
+6/30/2016,5,70,350,Team Training,Tiffany Morrison
+6/30/2016,5,75,375,Team Training,Tiffany Morrison
+6/29/2016,0,0,0,Off,May Garner
+6/29/2016,0,0,0,Off,Delia Alston
+6/29/2016,0,0,0,Off,Cassandra White
+6/29/2016,0,0,0,Off,Josie Merrill
+6/29/2016,4,60,240,Other,Isabel Quinn
+6/29/2016,3,45,135,Lifting,Tiffany Morrison
+6/28/2016,7,120,840,Team Training,Tasha Conner
+6/28/2016,8,105,840,Team Training,Cassandra White
+6/28/2016,7,90,630,Team Training,Josie Merrill
+6/28/2016,4,60,240,Lifting,Josie Merrill
+6/28/2016,0,0,0,Off,Megan Britt
+6/27/2016,7,60,420,Lifting,Cassandra White
+6/27/2016,0,0,0,Off,Josie Merrill
+6/27/2016,0,0,0,Off,Megan Britt
+6/26/2016,0,0,0,Off,Delia Alston
+6/26/2016,8,30,240,Game,Cassandra White
+6/26/2016,0,0,0,Off,Josie Merrill
+6/26/2016,0,0,0,Off,Tiffany Morrison
+6/25/2016,10,90,900,Game,Megan Britt
+6/25/2016,7,90,630,Team Training,Tiffany Morrison
+6/24/2016,5,60,300,Team Training,Tasha Conner
+6/24/2016,4,53,212,Team Training,May Garner
+6/24/2016,6,60,360,Team Training,Cassandra White
+6/24/2016,3,90,270,Team Training,Josie Merrill
+6/24/2016,4,50,200,Team Training,Isabel Quinn
+6/24/2016,3,60,180,Team Training,Tiffany Morrison
+6/23/2016,0,0,0,Off,Tasha Conner
+6/23/2016,2,180,360,Other,Megan Britt
+6/23/2016,2,35,70,Speed,Tiffany Morrison
+6/22/2016,8,105,840,Team Technical,Reyna Swanson
+6/22/2016,7,120,840,Team Training,Tasha Conner
+6/22/2016,7,120,840,Team Training,Saundra Maldonado
+6/22/2016,8,90,720,Team Training,May Garner
+6/22/2016,7,90,630,Team Training,Benita Gallagher
+6/22/2016,7,90,630,Team Training,Cassandra White
+6/22/2016,5,90,450,Team Training,Josie Merrill
+6/22/2016,7,105,735,Team Training,Isabel Quinn
+6/22/2016,6,90,540,Team Training,Marta Saunders
+6/22/2016,5,45,225,Team Training,Tiffany Morrison
+6/21/2016,7,70,490,Team Training,Catalina Rosario
+6/21/2016,3,120,360,Team Training,Tasha Conner
+6/21/2016,5,90,450,Team Training,May Garner
+6/21/2016,7,90,630,Team Training,Cassandra White
+6/21/2016,5,90,450,Team Training,Josie Merrill
+6/21/2016,6,75,450,Team Training,Isabel Quinn
+6/21/2016,6,60,360,Lifting,Isabel Quinn
+6/21/2016,3,75,225,Team Training,Silvia Pitts
+6/21/2016,8,80,640,Team Training,Megan Britt
+6/21/2016,5,60,300,Team Training,Tiffany Morrison
+6/20/2016,0,0,0,Off,May Garner
+6/20/2016,0,0,0,Off,Delia Alston
+6/20/2016,0,0,0,Off,Cassandra White
+6/20/2016,0,0,0,Off,Josie Merrill
+6/20/2016,0,0,0,Off,Megan Britt
+6/20/2016,0,0,0,Off,Tiffany Morrison
+6/19/2016,0,0,0,Off,Delia Alston
+6/19/2016,6,60,360,Team Training,Cassandra White
+6/19/2016,6,60,360,Lifting,Cassandra White
+6/19/2016,6,20,120,Game,Josie Merrill
+6/19/2016,8,90,720,Team Training,Tiffany Morrison
+6/18/2016,7,60,420,Lifting,Cassandra White
+6/18/2016,10,120,1200,Team Training,Cassandra White
+6/18/2016,3,70,210,Team Training,Tiffany Morrison
+6/17/2016,0,0,0,Off,Tasha Conner
+6/17/2016,2,30,60,Other,May Garner
+6/17/2016,0,0,0,Off,Delia Alston
+6/17/2016,0,0,0,Off,Cassandra White
+6/17/2016,2,90,180,Speed,Josie Merrill
+6/17/2016,1,20,20,Other,Isabel Quinn
+6/17/2016,0,0,0,Off,Megan Britt
+6/17/2016,2,30,60,Speed,Tiffany Morrison
+6/16/2016,8,105,840,Team Technical,Reyna Swanson
+6/16/2016,7,120,840,Team Training,Tasha Conner
+6/16/2016,8,120,960,Team Training,May Garner
+6/16/2016,8,80,640,Team Training,Cassandra White
+6/16/2016,6,80,480,Team Training,Megan Britt
+6/16/2016,7,80,560,Team Training,Tiffany Morrison
+6/15/2016,7,120,840,Team Training,Tasha Conner
+6/15/2016,10,90,900,Team Training,May Garner
+6/15/2016,7,90,630,Team Training,Delia Alston
+6/15/2016,8,75,600,Lifting,Cassandra White
+6/15/2016,8,90,720,Team Training,Cassandra White
+6/15/2016,3,90,270,Team Training,Josie Merrill
+6/15/2016,6,90,540,Team Training,Isabel Quinn
+6/15/2016,5,90,450,Team Training,Silvia Pitts
+6/15/2016,6,90,540,Team Training,Marta Saunders
+6/15/2016,7,80,560,Team Training,Tiffany Morrison
+6/14/2016,0,0,0,Off,Delia Alston
+6/14/2016,0,0,0,Off,Josie Merrill
+6/14/2016,0,0,0,Off,Silvia Pitts
+6/14/2016,0,0,0,Off,Tiffany Morrison
+6/13/2016,5,60,300,Team Training,Tasha Conner
+6/13/2016,0,0,0,Off,Megan Britt
+6/13/2016,2,20,40,Team Training,Tiffany Morrison
+6/12/2016,7,90,630,Game,Tiffany Morrison
+6/11/2016,3,60,180,Team Training,Tasha Conner
+6/11/2016,5,75,375,Team Training,May Garner
+6/11/2016,2,90,180,Team Training,Josie Merrill
+6/11/2016,2,60,120,Team Training,Silvia Pitts
+6/11/2016,5,45,225,Team Training,Megan Britt
+6/11/2016,3,80,240,Team Training,Tiffany Morrison
+6/10/2016,5,90,450,Team Technical,Reyna Swanson
+6/10/2016,8,120,960,Other,Cassandra White
+6/10/2016,2,90,180,Team Training,Josie Merrill
+6/10/2016,4,90,360,Team Training,Silvia Pitts
+6/10/2016,6,75,450,Team Training,Marta Saunders
+6/10/2016,6,80,480,Team Training,Megan Britt
+6/9/2016,5,120,600,Team Training,Tasha Conner
+6/9/2016,7,120,840,Team Training,May Garner
+6/9/2016,5,75,375,Team Training,Kathleen Barnes
+6/9/2016,3,90,270,Team Training,Josie Merrill
+6/9/2016,6,120,720,Team Training,Isabel Quinn
+6/9/2016,3,90,270,Team Training,Silvia Pitts
+6/9/2016,7,90,630,Team Training,Megan Britt
+6/9/2016,6,85,510,Team Training,Tiffany Morrison
+6/8/2016,3,60,180,Individual Technical,Reyna Swanson
+6/8/2016,0,0,0,Off,Tasha Conner
+6/8/2016,0,0,0,Off,May Garner
+6/8/2016,0,0,0,Off,Delia Alston
+6/8/2016,0,0,0,Off,Josie Merrill
+6/8/2016,4,120,480,Other,Isabel Quinn
+6/8/2016,0,0,0,Off,Silvia Pitts
+6/8/2016,2,60,120,Lifting,Marta Saunders
+6/8/2016,0,0,0,Off,Megan Britt
+6/8/2016,4,45,180,Lifting,Tiffany Morrison
+6/7/2016,5,120,600,Team Training,Tasha Conner
+6/7/2016,6,75,450,Team Training,May Garner
+6/7/2016,4,90,360,Team Training,Josie Merrill
+6/7/2016,5,90,450,Team Training,Silvia Pitts
+6/7/2016,7,105,735,Team Training,Marta Saunders
+6/7/2016,7,90,630,Team Training,Megan Britt
+6/6/2016,5,90,450,Team Training,Josie Merrill
+6/6/2016,7,90,630,Team Training,Silvia Pitts
+6/6/2016,8,120,960,Team Training,Marta Saunders
+6/6/2016,7,80,560,Team Training,Megan Britt
+6/6/2016,7,75,525,Team Training,Tiffany Morrison
+6/5/2016,5,90,450,Other,May Garner
+6/5/2016,0,0,0,Off,Delia Alston
+6/5/2016,0,0,0,Off,Josie Merrill
+6/5/2016,4,35,140,Other,Megan Britt
+6/5/2016,0,0,0,Off,Tiffany Morrison
+6/4/2016,0,0,0,Off,Reyna Swanson
+6/4/2016,3,60,180,Other,May Garner
+6/4/2016,3,60,180,Lifting,Josie Merrill
+6/4/2016,3,60,180,Other,Megan Britt
+6/4/2016,0,0,0,Off,Tiffany Morrison
+6/3/2016,4,75,300,Lifting,May Garner
+6/3/2016,0,0,0,Off,Delia Alston
+6/3/2016,4,45,180,Speed,Josie Merrill
+6/3/2016,7,45,315,Other,Megan Britt
+6/3/2016,3,45,135,Lifting,Tiffany Morrison
+6/2/2016,0,0,0,Off,May Garner
+6/2/2016,0,0,0,Off,Delia Alston
+6/2/2016,4,60,240,Speed,Josie Merrill
+6/2/2016,7,60,420,Lifting,Megan Britt
+6/2/2016,3,35,105,Speed,Tiffany Morrison
+6/1/2016,0,0,0,Off,Reyna Swanson
+6/1/2016,6,180,1080,Other,May Garner
+6/1/2016,0,0,0,Off,Delia Alston
+6/1/2016,0,0,0,Off,Kathleen Barnes
+6/1/2016,4,60,240,Speed,Josie Merrill
+6/1/2016,2,120,240,Other,Isabel Quinn
+6/1/2016,8,45,360,Other,Megan Britt
+6/1/2016,0,0,0,Off,Tiffany Morrison
+7/31/2016,0,0,0,Off,Delia Alston
+7/31/2016,7,30,210,Speed,Tiffany Morrison
+7/29/2016,2,57,114,Team Technical,Reyna Swanson
+7/29/2016,0,0,0,Off,Hillary Rogers
+7/29/2016,3,57,171,Team Training,Catalina Rosario
+7/29/2016,3,51,153,Team Training,Tasha Conner
+7/29/2016,3,49,147,Team Training,Saundra Maldonado
+7/29/2016,2,39,78,Team Training,Leslie Bradford
+7/29/2016,3,39,117,Team Training,May Garner
+7/29/2016,4,47,188,Team Training,Jana Barton
+7/29/2016,5,75,375,Team Training,Delia Alston
+7/29/2016,3,46,138,Team Training,Benita Gallagher
+7/29/2016,2,52,104,Team Training,Kathleen Barnes
+7/29/2016,2,57,114,Team Training,Cassandra White
+7/29/2016,2,46,92,Team Training,Josie Merrill
+7/29/2016,3,46,138,Team Training,Isabel Quinn
+7/29/2016,2,39,78,Team Training,Silvia Pitts
+7/29/2016,5,75,375,Team Training,Marta Saunders
+7/29/2016,3,59,177,Other,Annabelle Olsen
+7/29/2016,3,39,117,Team Training,Megan Britt
+7/29/2016,5,67,335,Team Training,Tiffany Morrison
+7/28/2016,6,90,540,Team Technical,Reyna Swanson
+7/28/2016,0,0,0,Off,Hillary Rogers
+7/28/2016,3,90,270,Team Training,Catalina Rosario
+7/28/2016,7,90,630,Team Training,Tasha Conner
+7/28/2016,5,90,450,Team Training,Saundra Maldonado
+7/28/2016,5,69,345,Team Training,Leslie Bradford
+7/28/2016,6,90,540,Team Training,May Garner
+7/28/2016,6,69,414,Team Training,Jana Barton
+7/28/2016,7,90,630,Team Training,Delia Alston
+7/28/2016,5,90,450,Team Training,Benita Gallagher
+7/28/2016,4,90,360,Team Training,Kathleen Barnes
+7/28/2016,7,90,630,Team Training,Cassandra White
+7/28/2016,7,90,630,Team Training,Josie Merrill
+7/28/2016,6,69,414,Team Training,Isabel Quinn
+7/28/2016,4,90,360,Team Training,Silvia Pitts
+7/28/2016,4,90,360,Team Training,Marta Saunders
+7/28/2016,3,69,207,Team Training,Annabelle Olsen
+7/28/2016,5,69,345,Team Training,Megan Britt
+7/28/2016,6,69,414,Team Training,Tiffany Morrison
+7/26/2016,4,77,308,Team Technical,Reyna Swanson
+7/26/2016,0,0,0,Off,Hillary Rogers
+7/26/2016,5,63,315,Team Training,Catalina Rosario
+7/26/2016,4,77,308,Team Training,Tasha Conner
+7/26/2016,5,63,315,Team Training,Saundra Maldonado
+7/26/2016,5,63,315,Team Training,Leslie Bradford
+7/26/2016,6,77,462,Team Training,May Garner
+7/26/2016,6,63,378,Team Training,Jana Barton
+7/26/2016,7,77,539,Team Training,Delia Alston
+7/26/2016,6,77,462,Team Training,Benita Gallagher
+7/26/2016,5,63,315,Team Training,Kathleen Barnes
+7/26/2016,6,72,432,Team Training,Cassandra White
+7/26/2016,4,72,288,Team Training,Josie Merrill
+7/26/2016,5,77,385,Team Training,Isabel Quinn
+7/26/2016,5,72,360,Team Training,Silvia Pitts
+7/26/2016,6,77,462,Team Training,Marta Saunders
+7/26/2016,2,35,70,Team Training,Annabelle Olsen
+7/26/2016,6,63,378,Team Training,Megan Britt
+7/26/2016,6,63,378,Team Training,Tiffany Morrison
+7/23/2016,7,124,868,Game: Club,Reyna Swanson
+7/23/2016,0,0,0,Off,Hillary Rogers
+7/23/2016,8,46,368,Game,Catalina Rosario
+7/23/2016,8,58,464,Game,Tasha Conner
+7/23/2016,8,50,400,Game,Saundra Maldonado
+7/23/2016,7,124,868,Game,Leslie Bradford
+7/23/2016,7,124,868,Game,May Garner
+7/23/2016,6,124,744,Game,Jana Barton
+7/23/2016,9,124,1116,Game,Delia Alston
+7/23/2016,7,117,819,Game,Benita Gallagher
+7/23/2016,7,124,868,Game,Kathleen Barnes
+7/23/2016,8,152,1216,Game,Cassandra White
+7/23/2016,7,124,868,Game,Josie Merrill
+7/23/2016,7,124,868,Game,Isabel Quinn
+7/23/2016,8,46,368,Game,Silvia Pitts
+7/23/2016,1,45,45,Game,Marta Saunders
+7/23/2016,7,105,735,Game,Megan Britt
+7/23/2016,8,64,512,Game,Tiffany Morrison
+7/22/2016,2,51,102,Team Technical,Reyna Swanson
+7/22/2016,0,0,0,Off,Hillary Rogers
+7/22/2016,2,51,102,Team Training,Catalina Rosario
+7/22/2016,2,51,102,Team Training,Tasha Conner
+7/22/2016,2,66,132,Team Training,Saundra Maldonado
+7/22/2016,2,51,102,Team Training,Leslie Bradford
+7/22/2016,2,51,102,Team Training,May Garner
+7/22/2016,2,51,102,Team Training,Jana Barton
+7/22/2016,2,51,102,Team Training,Delia Alston
+7/22/2016,2,51,102,Team Training,Benita Gallagher
+7/22/2016,2,51,102,Team Training,Kathleen Barnes
+7/22/2016,2,51,102,Team Training,Cassandra White
+7/22/2016,2,51,102,Team Training,Josie Merrill
+7/22/2016,2,51,102,Team Training,Isabel Quinn
+7/22/2016,2,51,102,Team Training,Silvia Pitts
+7/22/2016,2,51,102,Team Training,Marta Saunders
+7/22/2016,2,42,84,Team Training,Megan Britt
+7/22/2016,2,51,102,Team Training,Tiffany Morrison
+7/20/2016,4,76,304,Team Technical,Reyna Swanson
+7/20/2016,0,0,0,Off,Hillary Rogers
+7/20/2016,5,64,320,Team Training,Catalina Rosario
+7/20/2016,3,64,192,Team Training,Tasha Conner
+7/20/2016,5,76,380,Team Training,Saundra Maldonado
+7/20/2016,4,53,212,Team Training,Leslie Bradford
+7/20/2016,6,59,354,Team Training,May Garner
+7/20/2016,6,57,342,Team Training,Jana Barton
+7/20/2016,4,53,212,Team Training,Benita Gallagher
+7/20/2016,5,64,320,Team Training,Kathleen Barnes
+7/20/2016,6,64,384,Team Training,Cassandra White
+7/20/2016,4,76,304,Team Training,Josie Merrill
+7/20/2016,5,76,380,Team Training,Isabel Quinn
+7/20/2016,5,76,380,Team Training,Silvia Pitts
+7/20/2016,3,76,228,Team Training,Marta Saunders
+7/20/2016,6,64,384,Team Training,Megan Britt
+7/20/2016,6,53,318,Team Training,Tiffany Morrison
+7/19/2016,0,0,0,Off,Reyna Swanson
+7/19/2016,0,0,0,Off,Hillary Rogers
+7/19/2016,0,0,0,Off,Catalina Rosario
+7/19/2016,0,0,0,Off,Tasha Conner
+7/19/2016,0,0,0,Off,Saundra Maldonado
+7/19/2016,0,0,0,Off,Leslie Bradford
+7/19/2016,0,0,0,Off,May Garner
+7/19/2016,0,0,0,Off,Jana Barton
+7/19/2016,0,0,0,Off,Delia Alston
+7/19/2016,0,0,0,Off,Benita Gallagher
+7/19/2016,0,0,0,Off,Kathleen Barnes
+7/19/2016,0,0,0,Off,Cassandra White
+7/19/2016,0,0,0,Off,Josie Merrill
+7/19/2016,0,0,0,Off,Isabel Quinn
+7/19/2016,0,0,0,Off,Silvia Pitts
+7/19/2016,0,0,0,Off,Marta Saunders
+7/19/2016,0,0,0,Off,Megan Britt
+7/19/2016,0,0,0,Off,Tiffany Morrison
+7/18/2016,1,60,60,Team Technical,Reyna Swanson
+7/18/2016,8,120,960,Team Training,Hillary Rogers
+7/18/2016,7,120,840,Team Training,Catalina Rosario
+7/18/2016,1,120,120,Team Training,Tasha Conner
+7/18/2016,2,120,240,Team Training,Saundra Maldonado
+7/18/2016,2,120,240,Team Training,Leslie Bradford
+7/18/2016,5,60,300,Team Training,May Garner
+7/18/2016,1,67,67,Team Training,Jana Barton
+7/18/2016,1,120,120,Team Training,Delia Alston
+7/18/2016,3,71,213,Team Training,Benita Gallagher
+7/18/2016,1,30,30,Team Training,Kathleen Barnes
+7/18/2016,4,84,336,Team Training,Cassandra White
+7/18/2016,1,120,120,Team Training,Josie Merrill
+7/18/2016,1,60,60,Team Training,Isabel Quinn
+7/18/2016,5,120,600,Team Training,Silvia Pitts
+7/18/2016,2,120,240,Team Training,Marta Saunders
+7/18/2016,2,120,240,Team Training,Annabelle Olsen
+7/18/2016,2,60,120,Team Training,Megan Britt
+7/18/2016,5,60,300,Team Training,Tiffany Morrison
+7/17/2016,0,0,0,Off,Tasha Conner
+7/15/2016,2,56,112,Team Technical,Reyna Swanson
+7/15/2016,1,24,24,Team Training,Hillary Rogers
+7/15/2016,4,56,224,Team Training,Catalina Rosario
+7/15/2016,3,56,168,Team Training,Tasha Conner
+7/15/2016,5,94,470,Team Training,Saundra Maldonado
+7/15/2016,3,56,168,Team Training,Leslie Bradford
+7/15/2016,5,89,445,Team Training,May Garner
+7/15/2016,3,56,168,Team Training,Jana Barton
+7/15/2016,0,0,0,Off,Delia Alston
+7/15/2016,2,56,112,Team Training,Benita Gallagher
+7/15/2016,2,56,112,Team Training,Kathleen Barnes
+7/15/2016,5,56,280,Team Training,Cassandra White
+7/15/2016,3,56,168,Team Training,Josie Merrill
+7/15/2016,3,56,168,Team Training,Isabel Quinn
+7/15/2016,3,56,168,Team Training,Silvia Pitts
+7/15/2016,3,56,168,Team Training,Marta Saunders
+7/15/2016,3,56,168,Team Training,Annabelle Olsen
+7/15/2016,3,56,168,Team Training,Megan Britt
+7/15/2016,4,56,224,Team Training,Tiffany Morrison
+7/14/2016,0,0,0,Off,Reyna Swanson
+7/14/2016,0,0,0,Off,Hillary Rogers
+7/14/2016,5,75,375,Team Training,Catalina Rosario
+7/14/2016,3,67,201,Team Training,Tasha Conner
+7/14/2016,4,67,268,Team Training,Saundra Maldonado
+7/14/2016,5,67,335,Team Training,Leslie Bradford
+7/14/2016,7,88,616,Team Training,May Garner
+7/14/2016,6,67,402,Team Training,Jana Barton
+7/14/2016,0,0,0,Off,Delia Alston
+7/14/2016,4,67,268,Team Training,Benita Gallagher
+7/14/2016,3,65,195,Team Training,Kathleen Barnes
+7/14/2016,6,67,402,Team Training,Cassandra White
+7/14/2016,3,75,225,Team Training,Josie Merrill
+7/14/2016,6,67,402,Team Training,Isabel Quinn
+7/14/2016,3,76,228,Team Training,Silvia Pitts
+7/14/2016,4,67,268,Team Training,Marta Saunders
+7/14/2016,5,67,335,Team Training,Annabelle Olsen
+7/14/2016,5,67,335,Team Training,Megan Britt
+7/14/2016,7,86,602,Team Training,Tiffany Morrison
+7/14/2016,7,86,602,Team Training,Tiffany Morrison
+7/14/2016,7,86,602,Team Training,Tiffany Morrison
+7/13/2016,7,60,420,Lifting,Tasha Conner
+7/13/2016,4,45,180,Lifting,Tiffany Morrison
+7/12/2016,5,75,375,Team Technical,Reyna Swanson
+7/12/2016,0,0,0,Off,Hillary Rogers
+7/12/2016,6,78,468,Team Training,Catalina Rosario
+7/12/2016,7,80,560,Team Training,Tasha Conner
+7/12/2016,5,89,445,Team Training,Saundra Maldonado
+7/12/2016,7,86,602,Team Training,Leslie Bradford
+7/12/2016,6,96,576,Team Training,May Garner
+7/12/2016,5,88,440,Team Training,Jana Barton
+7/12/2016,0,0,0,Off,Delia Alston
+7/12/2016,6,85,510,Team Training,Benita Gallagher
+7/12/2016,7,88,616,Team Training,Kathleen Barnes
+7/12/2016,5,96,480,Team Training,Cassandra White
+7/12/2016,4,91,364,Team Training,Josie Merrill
+7/12/2016,6,75,450,Team Training,Isabel Quinn
+7/12/2016,6,91,546,Team Training,Silvia Pitts
+7/12/2016,3,64,192,Team Training,Marta Saunders
+7/12/2016,7,71,497,Team Training,Annabelle Olsen
+7/12/2016,7,64,448,Team Training,Megan Britt
+7/12/2016,6,92,552,Team Training,Tiffany Morrison
+7/11/2016,1,96,96,Team Technical,Reyna Swanson
+7/11/2016,0,0,0,Off,Hillary Rogers
+7/11/2016,9,96,864,Team Training,Catalina Rosario
+7/11/2016,9,78,702,Team Training,Tasha Conner
+7/11/2016,5,96,480,Team Training,Saundra Maldonado
+7/11/2016,2,73,146,Team Training,Leslie Bradford
+7/11/2016,3,109,327,Team Training,May Garner
+7/11/2016,2,73,146,Team Training,Jana Barton
+7/11/2016,0,0,0,Off,Delia Alston
+7/11/2016,3,102,306,Team Training,Benita Gallagher
+7/11/2016,4,90,360,Team Training,Kathleen Barnes
+7/11/2016,2,87,174,Team Training,Cassandra White
+7/11/2016,6,108,648,Team Training,Josie Merrill
+7/11/2016,3,96,288,Team Training,Isabel Quinn
+7/11/2016,6,108,648,Team Training,Silvia Pitts
+7/11/2016,4,96,384,Team Training,Marta Saunders
+7/11/2016,6,96,576,Team Training,Annabelle Olsen
+7/11/2016,3,91,273,Team Training,Megan Britt
+7/11/2016,5,78,390,Team Training,Tiffany Morrison
+7/10/2016,0,0,0,Off,Delia Alston
+7/10/2016,0,0,0,Off,Josie Merrill
+7/9/2016,7,133,931,Game: Club,Reyna Swanson
+7/9/2016,7,133,931,Game,Hillary Rogers
+7/9/2016,1,27,27,Game,Catalina Rosario
+7/9/2016,1,27,27,Game,Tasha Conner
+7/9/2016,1,27,27,Game,Saundra Maldonado
+7/9/2016,7,133,931,Game,Leslie Bradford
+7/9/2016,7,133,931,Game,May Garner
+7/9/2016,8,106,848,Game,Jana Barton
+7/9/2016,7,56,392,Game,Delia Alston
+7/9/2016,7,133,931,Game,Benita Gallagher
+7/9/2016,7,103,721,Game,Kathleen Barnes
+7/9/2016,7,97,679,Game,Cassandra White
+7/9/2016,1,27,27,Game,Josie Merrill
+7/9/2016,7,116,812,Game,Isabel Quinn
+7/9/2016,1,27,27,Game,Silvia Pitts
+7/9/2016,6,102,612,Game,Marta Saunders
+7/9/2016,5,43,215,Game,Annabelle Olsen
+7/9/2016,9,133,1197,Game,Megan Britt
+7/9/2016,8,73,584,Game,Tiffany Morrison
+7/8/2016,2,72,144,Team Technical,Reyna Swanson
+7/8/2016,3,72,216,Team Training,Hillary Rogers
+7/8/2016,2,72,144,Team Training,Catalina Rosario
+7/8/2016,2,72,144,Team Training,Tasha Conner
+7/8/2016,3,72,216,Team Training,Saundra Maldonado
+7/8/2016,3,72,216,Team Training,Leslie Bradford
+7/8/2016,3,72,216,Team Training,May Garner
+7/8/2016,2,72,144,Team Training,Jana Barton
+7/8/2016,4,60,240,Team Training,Delia Alston
+7/8/2016,2,72,144,Team Training,Benita Gallagher
+7/8/2016,2,72,144,Team Training,Kathleen Barnes
+7/8/2016,4,72,288,Team Training,Cassandra White
+7/8/2016,4,72,288,Team Training,Josie Merrill
+7/8/2016,2,72,144,Team Training,Isabel Quinn
+7/8/2016,3,72,216,Team Training,Silvia Pitts
+7/8/2016,4,72,288,Team Training,Marta Saunders
+7/8/2016,3,72,216,Team Training,Annabelle Olsen
+7/8/2016,3,72,216,Team Training,Megan Britt
+7/8/2016,3,72,216,Team Training,Tiffany Morrison
+7/7/2016,2,77,154,Team Technical,Reyna Swanson
+7/7/2016,0,0,0,Off,Hillary Rogers
+7/7/2016,3,71,213,Team Training,Catalina Rosario
+7/7/2016,3,102,306,Team Training,Tasha Conner
+7/7/2016,3,73,219,Team Training,Saundra Maldonado
+7/7/2016,2,63,126,Team Training,Leslie Bradford
+7/7/2016,4,74,296,Team Training,May Garner
+7/7/2016,3,71,213,Team Training,Jana Barton
+7/7/2016,5,74,370,Team Training,Delia Alston
+7/7/2016,1,74,74,Team Training,Benita Gallagher
+7/7/2016,2,71,142,Team Training,Kathleen Barnes
+7/7/2016,0,0,0,Off,Cassandra White
+7/7/2016,3,70,210,Team Training,Josie Merrill
+7/7/2016,1,74,74,Team Training,Isabel Quinn
+7/7/2016,3,74,222,Team Training,Silvia Pitts
+7/7/2016,7,74,518,Team Training,Marta Saunders
+7/7/2016,3,74,222,Team Training,Megan Britt
+7/7/2016,4,77,308,Team Training,Tiffany Morrison
+7/6/2016,4,71,284,Team Technical,Reyna Swanson
+7/6/2016,4,64,256,Team Training,Hillary Rogers
+7/6/2016,4,70,280,Team Training,Catalina Rosario
+7/6/2016,5,103,515,Team Training,Tasha Conner
+7/6/2016,5,76,380,Team Training,Saundra Maldonado
+7/6/2016,5,64,320,Team Training,Leslie Bradford
+7/6/2016,5,64,320,Team Training,May Garner
+7/6/2016,5,103,515,Team Training,Jana Barton
+7/6/2016,7,90,630,Team Training,Delia Alston
+7/6/2016,5,78,390,Team Training,Benita Gallagher
+7/6/2016,5,81,405,Team Training,Kathleen Barnes
+7/6/2016,6,64,384,Team Training,Cassandra White
+7/6/2016,4,90,360,Team Training,Josie Merrill
+7/6/2016,5,71,355,Team Training,Isabel Quinn
+7/6/2016,4,91,364,Team Training,Silvia Pitts
+7/6/2016,5,90,450,Team Training,Marta Saunders
+7/6/2016,7,64,448,Team Training,Megan Britt
+7/6/2016,5,89,445,Team Training,Tiffany Morrison
+7/5/2016,6,94,564,Team Technical,Reyna Swanson
+7/5/2016,5,85,425,Team Training,Hillary Rogers
+7/5/2016,6,85,510,Team Training,Catalina Rosario
+7/5/2016,7,85,595,Team Training,Tasha Conner
+7/5/2016,6,91,546,Team Training,Saundra Maldonado
+7/5/2016,8,119,952,Team Training,Leslie Bradford
+7/5/2016,6,85,510,Team Training,May Garner
+7/5/2016,5,119,595,Team Training,Jana Barton
+7/5/2016,6,119,714,Team Training,Delia Alston
+7/5/2016,6,119,714,Team Training,Benita Gallagher
+7/5/2016,6,119,714,Team Training,Kathleen Barnes
+7/5/2016,6,91,546,Team Training,Cassandra White
+7/5/2016,5,94,470,Team Training,Josie Merrill
+7/5/2016,5,85,425,Team Training,Isabel Quinn
+7/5/2016,5,94,470,Team Training,Silvia Pitts
+7/5/2016,5,119,595,Team Training,Marta Saunders
+7/5/2016,6,85,510,Team Training,Megan Britt
+7/5/2016,6,119,714,Team Training,Tiffany Morrison
+7/4/2016,0,0,0,Off,May Garner
+7/4/2016,0,0,0,Off,Delia Alston
+7/4/2016,0,0,0,Off,Cassandra White
+7/4/2016,0,0,0,Off,Josie Merrill
+7/4/2016,0,0,0,Off,Megan Britt
+7/4/2016,0,0,0,Off,Tiffany Morrison
+7/3/2016,1,30,30,Team Training,May Garner
+7/3/2016,2,20,40,Other,Megan Britt
+7/3/2016,2,70,140,Team Training,Tiffany Morrison
+7/2/2016,9,70,630,Game,Cassandra White
+7/2/2016,7,90,630,Game,Tiffany Morrison
+7/1/2016,5,90,450,Team Training,Cassandra White
+7/1/2016,2,90,180,Team Training,Josie Merrill
+7/1/2016,2,70,140,Team Training,Tiffany Morrison

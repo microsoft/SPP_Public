@@ -1,0 +1,535 @@
+Date,Score,LabelText,FullName
+6/30/2016,2,Well Hydrated,Tasha Conner
+6/30/2016,1,Hyper Hydrated,Saundra Maldonado
+6/30/2016,3,Hydrated,May Garner
+6/30/2016,3,Hydrated,Delia Alston
+6/30/2016,8,Extremely Dehydrated,Kathleen Barnes
+6/30/2016,3,Hydrated,Kathleen Barnes
+6/30/2016,4,Slightly Dehydrated,Cassandra White
+6/30/2016,2,Well Hydrated,Josie Merrill
+6/30/2016,3,Hydrated,Isabel Quinn
+6/30/2016,3,Hydrated,Marta Saunders
+6/30/2016,3,Hydrated,Megan Britt
+6/30/2016,2,Well Hydrated,Tiffany Morrison
+6/29/2016,1,Hyper Hydrated,Saundra Maldonado
+6/29/2016,3,Hydrated,May Garner
+6/29/2016,3,Hydrated,Delia Alston
+6/29/2016,4,Slightly Dehydrated,Cassandra White
+6/29/2016,2,Well Hydrated,Josie Merrill
+6/29/2016,3,Hydrated,Isabel Quinn
+6/29/2016,3,Hydrated,Marta Saunders
+6/29/2016,3,Hydrated,Megan Britt
+6/29/2016,2,Well Hydrated,Tiffany Morrison
+6/28/2016,2,Well Hydrated,Tasha Conner
+6/28/2016,1,Hyper Hydrated,Saundra Maldonado
+6/28/2016,2,Well Hydrated,May Garner
+6/28/2016,2,Well Hydrated,Delia Alston
+6/28/2016,3,Hydrated,Kathleen Barnes
+6/28/2016,4,Slightly Dehydrated,Cassandra White
+6/28/2016,2,Well Hydrated,Josie Merrill
+6/28/2016,3,Hydrated,Isabel Quinn
+6/28/2016,2,Well Hydrated,Marta Saunders
+6/28/2016,4,Slightly Dehydrated,Megan Britt
+6/28/2016,2,Well Hydrated,Tiffany Morrison
+6/27/2016,1,Hyper Hydrated,Saundra Maldonado
+6/27/2016,4,Slightly Dehydrated,Cassandra White
+6/27/2016,2,Well Hydrated,Josie Merrill
+6/27/2016,3,Hydrated,Isabel Quinn
+6/27/2016,4,Slightly Dehydrated,Megan Britt
+6/27/2016,2,Well Hydrated,Tiffany Morrison
+6/26/2016,1,Hyper Hydrated,Saundra Maldonado
+6/26/2016,3,Hydrated,Delia Alston
+6/26/2016,3,Hydrated,Josie Merrill
+6/26/2016,4,Slightly Dehydrated,Isabel Quinn
+6/26/2016,2,Well Hydrated,Tiffany Morrison
+6/25/2016,1,Hyper Hydrated,Saundra Maldonado
+6/25/2016,4,Slightly Dehydrated,Delia Alston
+6/25/2016,4,Slightly Dehydrated,Cassandra White
+6/25/2016,1,Hyper Hydrated,Josie Merrill
+6/25/2016,3,Hydrated,Isabel Quinn
+6/25/2016,3,Hydrated,Megan Britt
+6/25/2016,2,Well Hydrated,Tiffany Morrison
+6/24/2016,2,Well Hydrated,Tasha Conner
+6/24/2016,2,Well Hydrated,Saundra Maldonado
+6/24/2016,4,Slightly Dehydrated,Delia Alston
+6/24/2016,4,Slightly Dehydrated,Cassandra White
+6/24/2016,3,Hydrated,Josie Merrill
+6/24/2016,3,Hydrated,Isabel Quinn
+6/24/2016,3,Hydrated,Marta Saunders
+6/24/2016,3,Hydrated,Megan Britt
+6/24/2016,2,Well Hydrated,Tiffany Morrison
+6/23/2016,2,Well Hydrated,Tasha Conner
+6/23/2016,2,Well Hydrated,Saundra Maldonado
+6/23/2016,2,Well Hydrated,May Garner
+6/23/2016,2,Well Hydrated,Delia Alston
+6/23/2016,4,Slightly Dehydrated,Cassandra White
+6/23/2016,1,Hyper Hydrated,Josie Merrill
+6/23/2016,3,Hydrated,Isabel Quinn
+6/23/2016,3,Hydrated,Megan Britt
+6/23/2016,2,Well Hydrated,Tiffany Morrison
+6/22/2016,2,Well Hydrated,Tasha Conner
+6/22/2016,2,Well Hydrated,Saundra Maldonado
+6/22/2016,2,Well Hydrated,May Garner
+6/22/2016,3,Hydrated,Delia Alston
+6/22/2016,3,Hydrated,Kathleen Barnes
+6/22/2016,3,Hydrated,Cassandra White
+6/22/2016,1,Hyper Hydrated,Josie Merrill
+6/22/2016,3,Hydrated,Isabel Quinn
+6/22/2016,3,Hydrated,Marta Saunders
+6/22/2016,4,Slightly Dehydrated,Megan Britt
+6/22/2016,2,Well Hydrated,Tiffany Morrison
+6/21/2016,2,Well Hydrated,Tasha Conner
+6/21/2016,2,Well Hydrated,Saundra Maldonado
+6/21/2016,2,Well Hydrated,May Garner
+6/21/2016,4,Slightly Dehydrated,Delia Alston
+6/21/2016,4,Slightly Dehydrated,Kathleen Barnes
+6/21/2016,4,Slightly Dehydrated,Cassandra White
+6/21/2016,2,Well Hydrated,Josie Merrill
+6/21/2016,4,Slightly Dehydrated,Isabel Quinn
+6/21/2016,3,Hydrated,Marta Saunders
+6/21/2016,4,Slightly Dehydrated,Megan Britt
+6/21/2016,2,Well Hydrated,Tiffany Morrison
+6/20/2016,1,Hyper Hydrated,Saundra Maldonado
+6/20/2016,3,Hydrated,May Garner
+6/20/2016,4,Slightly Dehydrated,Delia Alston
+6/20/2016,4,Slightly Dehydrated,Cassandra White
+6/20/2016,3,Hydrated,Josie Merrill
+6/20/2016,4,Slightly Dehydrated,Isabel Quinn
+6/20/2016,2,Well Hydrated,Marta Saunders
+6/20/2016,3,Hydrated,Megan Britt
+6/20/2016,2,Well Hydrated,Tiffany Morrison
+6/19/2016,1,Hyper Hydrated,Saundra Maldonado
+6/19/2016,2,Well Hydrated,May Garner
+6/19/2016,3,Hydrated,Delia Alston
+6/19/2016,4,Slightly Dehydrated,Cassandra White
+6/19/2016,2,Well Hydrated,Josie Merrill
+6/19/2016,4,Slightly Dehydrated,Isabel Quinn
+6/19/2016,2,Well Hydrated,Marta Saunders
+6/19/2016,3,Hydrated,Megan Britt
+6/19/2016,2,Well Hydrated,Tiffany Morrison
+6/18/2016,1,Hyper Hydrated,Saundra Maldonado
+6/18/2016,2,Well Hydrated,May Garner
+6/18/2016,3,Hydrated,Delia Alston
+6/18/2016,4,Slightly Dehydrated,Cassandra White
+6/18/2016,1,Hyper Hydrated,Josie Merrill
+6/18/2016,3,Hydrated,Isabel Quinn
+6/18/2016,3,Hydrated,Megan Britt
+6/18/2016,2,Well Hydrated,Tiffany Morrison
+6/17/2016,3,Hydrated,Tasha Conner
+6/17/2016,2,Well Hydrated,Saundra Maldonado
+6/17/2016,2,Well Hydrated,May Garner
+6/17/2016,3,Hydrated,Delia Alston
+6/17/2016,4,Slightly Dehydrated,Kathleen Barnes
+6/17/2016,3,Hydrated,Cassandra White
+6/17/2016,2,Well Hydrated,Josie Merrill
+6/17/2016,3,Hydrated,Isabel Quinn
+6/17/2016,3,Hydrated,Marta Saunders
+6/17/2016,3,Hydrated,Megan Britt
+6/17/2016,2,Well Hydrated,Tiffany Morrison
+6/16/2016,2,Well Hydrated,Tasha Conner
+6/16/2016,1,Hyper Hydrated,Saundra Maldonado
+6/16/2016,2,Well Hydrated,May Garner
+6/16/2016,4,Slightly Dehydrated,Delia Alston
+6/16/2016,3,Hydrated,Kathleen Barnes
+6/16/2016,4,Slightly Dehydrated,Cassandra White
+6/16/2016,2,Well Hydrated,Josie Merrill
+6/16/2016,3,Hydrated,Isabel Quinn
+6/16/2016,3,Hydrated,Marta Saunders
+6/16/2016,4,Slightly Dehydrated,Megan Britt
+6/16/2016,2,Well Hydrated,Tiffany Morrison
+6/15/2016,2,Well Hydrated,Tasha Conner
+6/15/2016,2,Well Hydrated,Saundra Maldonado
+6/15/2016,2,Well Hydrated,May Garner
+6/15/2016,3,Hydrated,Delia Alston
+6/15/2016,3,Hydrated,Kathleen Barnes
+6/15/2016,4,Slightly Dehydrated,Cassandra White
+6/15/2016,2,Well Hydrated,Josie Merrill
+6/15/2016,4,Slightly Dehydrated,Isabel Quinn
+6/15/2016,2,Well Hydrated,Marta Saunders
+6/15/2016,3,Hydrated,Megan Britt
+6/15/2016,2,Well Hydrated,Tiffany Morrison
+6/14/2016,1,Hyper Hydrated,Saundra Maldonado
+6/14/2016,3,Hydrated,Delia Alston
+6/14/2016,4,Slightly Dehydrated,Cassandra White
+6/14/2016,2,Well Hydrated,Josie Merrill
+6/14/2016,4,Slightly Dehydrated,Isabel Quinn
+6/13/2016,4,Slightly Dehydrated,Tasha Conner
+6/13/2016,1,Hyper Hydrated,Saundra Maldonado
+6/13/2016,2,Well Hydrated,May Garner
+6/13/2016,3,Hydrated,Delia Alston
+6/13/2016,4,Slightly Dehydrated,Cassandra White
+6/13/2016,1,Hyper Hydrated,Josie Merrill
+6/13/2016,4,Slightly Dehydrated,Isabel Quinn
+6/13/2016,3,Hydrated,Marta Saunders
+6/13/2016,3,Hydrated,Megan Britt
+6/13/2016,2,Well Hydrated,Tiffany Morrison
+6/12/2016,1,Hyper Hydrated,Saundra Maldonado
+6/12/2016,2,Well Hydrated,May Garner
+6/12/2016,1,Hyper Hydrated,Josie Merrill
+6/12/2016,3,Hydrated,Isabel Quinn
+6/12/2016,3,Hydrated,Megan Britt
+6/12/2016,2,Well Hydrated,Tiffany Morrison
+6/11/2016,2,Well Hydrated,Tasha Conner
+6/11/2016,1,Hyper Hydrated,Saundra Maldonado
+6/11/2016,2,Well Hydrated,May Garner
+6/11/2016,3,Hydrated,Delia Alston
+6/11/2016,3,Hydrated,Kathleen Barnes
+6/11/2016,4,Slightly Dehydrated,Cassandra White
+6/11/2016,1,Hyper Hydrated,Josie Merrill
+6/11/2016,3,Hydrated,Isabel Quinn
+6/11/2016,4,Slightly Dehydrated,Megan Britt
+6/11/2016,2,Well Hydrated,Tiffany Morrison
+6/10/2016,1,Hyper Hydrated,Saundra Maldonado
+6/10/2016,2,Well Hydrated,May Garner
+6/10/2016,3,Hydrated,Delia Alston
+6/10/2016,2,Well Hydrated,Kathleen Barnes
+6/10/2016,4,Slightly Dehydrated,Cassandra White
+6/10/2016,2,Well Hydrated,Josie Merrill
+6/10/2016,3,Hydrated,Isabel Quinn
+6/10/2016,2,Well Hydrated,Marta Saunders
+6/10/2016,2,Well Hydrated,Marta Saunders
+6/10/2016,5,Dehydrated,Megan Britt
+6/10/2016,2,Well Hydrated,Tiffany Morrison
+6/9/2016,2,Well Hydrated,Tasha Conner
+6/9/2016,1,Hyper Hydrated,Saundra Maldonado
+6/9/2016,2,Well Hydrated,May Garner
+6/9/2016,2,Well Hydrated,Delia Alston
+6/9/2016,3,Hydrated,Kathleen Barnes
+6/9/2016,4,Slightly Dehydrated,Cassandra White
+6/9/2016,1,Hyper Hydrated,Josie Merrill
+6/9/2016,4,Slightly Dehydrated,Isabel Quinn
+6/9/2016,2,Well Hydrated,Marta Saunders
+6/9/2016,3,Hydrated,Megan Britt
+6/9/2016,2,Well Hydrated,Tiffany Morrison
+6/8/2016,2,Well Hydrated,Tasha Conner
+6/8/2016,1,Hyper Hydrated,Saundra Maldonado
+6/8/2016,2,Well Hydrated,May Garner
+6/8/2016,3,Hydrated,Delia Alston
+6/8/2016,4,Slightly Dehydrated,Cassandra White
+6/8/2016,2,Well Hydrated,Josie Merrill
+6/8/2016,4,Slightly Dehydrated,Isabel Quinn
+6/8/2016,3,Hydrated,Marta Saunders
+6/8/2016,3,Hydrated,Megan Britt
+6/8/2016,2,Well Hydrated,Tiffany Morrison
+6/7/2016,2,Well Hydrated,Tasha Conner
+6/7/2016,1,Hyper Hydrated,Saundra Maldonado
+6/7/2016,2,Well Hydrated,May Garner
+6/7/2016,5,Dehydrated,Delia Alston
+6/7/2016,4,Slightly Dehydrated,Kathleen Barnes
+6/7/2016,1,Hyper Hydrated,Josie Merrill
+6/7/2016,3,Hydrated,Isabel Quinn
+6/7/2016,2,Well Hydrated,Marta Saunders
+6/7/2016,3,Hydrated,Marta Saunders
+6/7/2016,3,Hydrated,Megan Britt
+6/7/2016,2,Well Hydrated,Tiffany Morrison
+6/6/2016,1,Hyper Hydrated,Saundra Maldonado
+6/6/2016,2,Well Hydrated,May Garner
+6/6/2016,5,Dehydrated,Delia Alston
+6/6/2016,3,Hydrated,Kathleen Barnes
+6/6/2016,4,Slightly Dehydrated,Cassandra White
+6/6/2016,2,Well Hydrated,Josie Merrill
+6/6/2016,4,Slightly Dehydrated,Isabel Quinn
+6/6/2016,2,Well Hydrated,Marta Saunders
+6/6/2016,2,Well Hydrated,Marta Saunders
+6/6/2016,4,Slightly Dehydrated,Megan Britt
+6/6/2016,2,Well Hydrated,Tiffany Morrison
+6/5/2016,2,Well Hydrated,Saundra Maldonado
+6/5/2016,3,Hydrated,May Garner
+6/5/2016,3,Hydrated,Delia Alston
+6/5/2016,4,Slightly Dehydrated,Cassandra White
+6/5/2016,3,Hydrated,Josie Merrill
+6/5/2016,3,Hydrated,Isabel Quinn
+6/5/2016,3,Hydrated,Marta Saunders
+6/5/2016,2,Well Hydrated,Megan Britt
+6/5/2016,2,Well Hydrated,Tiffany Morrison
+6/4/2016,1,Hyper Hydrated,Saundra Maldonado
+6/4/2016,3,Hydrated,May Garner
+6/4/2016,2,Well Hydrated,Delia Alston
+6/4/2016,3,Hydrated,Cassandra White
+6/4/2016,2,Well Hydrated,Josie Merrill
+6/4/2016,2,Well Hydrated,Isabel Quinn
+6/4/2016,3,Hydrated,Megan Britt
+6/4/2016,3,Hydrated,Tiffany Morrison
+6/3/2016,1,Hyper Hydrated,Saundra Maldonado
+6/3/2016,3,Hydrated,May Garner
+6/3/2016,3,Hydrated,Delia Alston
+6/3/2016,3,Hydrated,Cassandra White
+6/3/2016,2,Well Hydrated,Josie Merrill
+6/3/2016,2,Well Hydrated,Josie Merrill
+6/3/2016,3,Hydrated,Isabel Quinn
+6/3/2016,2,Well Hydrated,Megan Britt
+6/3/2016,3,Hydrated,Tiffany Morrison
+6/2/2016,1,Hyper Hydrated,Saundra Maldonado
+6/2/2016,3,Hydrated,May Garner
+6/2/2016,2,Well Hydrated,Delia Alston
+6/2/2016,4,Slightly Dehydrated,Cassandra White
+6/2/2016,2,Well Hydrated,Josie Merrill
+6/2/2016,4,Slightly Dehydrated,Isabel Quinn
+6/2/2016,3,Hydrated,Megan Britt
+6/2/2016,2,Well Hydrated,Tiffany Morrison
+6/1/2016,2,Well Hydrated,Saundra Maldonado
+6/1/2016,3,Hydrated,May Garner
+6/1/2016,4,Slightly Dehydrated,Delia Alston
+6/1/2016,4,Slightly Dehydrated,Cassandra White
+6/1/2016,3,Hydrated,Josie Merrill
+6/1/2016,3,Hydrated,Isabel Quinn
+6/1/2016,3,Hydrated,Megan Britt
+6/1/2016,2,Well Hydrated,Tiffany Morrison
+7/31/2016,4,Slightly Dehydrated,Delia Alston
+7/31/2016,2,Well Hydrated,Tiffany Morrison
+7/30/2016,3,Hydrated,May Garner
+7/30/2016,3,Hydrated,Delia Alston
+7/30/2016,1,Hyper Hydrated,Josie Merrill
+7/30/2016,2,Well Hydrated,Marta Saunders
+7/30/2016,3,Hydrated,Megan Britt
+7/30/2016,2,Well Hydrated,Tiffany Morrison
+7/29/2016,2,Well Hydrated,Reyna Swanson
+7/29/2016,3,Hydrated,Hillary Rogers
+7/29/2016,3,Hydrated,Catalina Rosario
+7/29/2016,3,Hydrated,Tasha Conner
+7/29/2016,1,Hyper Hydrated,Saundra Maldonado
+7/29/2016,3,Hydrated,Leslie Bradford
+7/29/2016,3,Hydrated,May Garner
+7/29/2016,2,Well Hydrated,Jana Barton
+7/29/2016,2,Well Hydrated,Jana Barton
+7/29/2016,3,Hydrated,Delia Alston
+7/29/2016,4,Slightly Dehydrated,Benita Gallagher
+7/29/2016,3,Hydrated,Kathleen Barnes
+7/29/2016,4,Slightly Dehydrated,Cassandra White
+7/29/2016,2,Well Hydrated,Josie Merrill
+7/29/2016,3,Hydrated,Isabel Quinn
+7/29/2016,3,Hydrated,Silvia Pitts
+7/29/2016,2,Well Hydrated,Marta Saunders
+7/29/2016,4,Slightly Dehydrated,Annabelle Olsen
+7/29/2016,4,Slightly Dehydrated,Megan Britt
+7/29/2016,2,Well Hydrated,Tiffany Morrison
+7/28/2016,3,Hydrated,Reyna Swanson
+7/28/2016,4,Slightly Dehydrated,Tasha Conner
+7/28/2016,1,Hyper Hydrated,Saundra Maldonado
+7/28/2016,3,Hydrated,May Garner
+7/28/2016,3,Hydrated,Jana Barton
+7/28/2016,4,Slightly Dehydrated,Delia Alston
+7/28/2016,4,Slightly Dehydrated,Benita Gallagher
+7/28/2016,3,Hydrated,Kathleen Barnes
+7/28/2016,3,Hydrated,Cassandra White
+7/28/2016,2,Well Hydrated,Josie Merrill
+7/28/2016,3,Hydrated,Isabel Quinn
+7/28/2016,3,Hydrated,Marta Saunders
+7/28/2016,5,Dehydrated,Annabelle Olsen
+7/28/2016,4,Slightly Dehydrated,Annabelle Olsen
+7/28/2016,3,Hydrated,Megan Britt
+7/28/2016,2,Well Hydrated,Megan Britt
+7/28/2016,2,Well Hydrated,Tiffany Morrison
+7/27/2016,4,Slightly Dehydrated,Delia Alston
+7/27/2016,2,Well Hydrated,Tiffany Morrison
+7/26/2016,2,Well Hydrated,Tasha Conner
+7/26/2016,1,Hyper Hydrated,Saundra Maldonado
+7/26/2016,3,Hydrated,May Garner
+7/26/2016,3,Hydrated,Delia Alston
+7/26/2016,3,Hydrated,Kathleen Barnes
+7/26/2016,3,Hydrated,Cassandra White
+7/26/2016,2,Well Hydrated,Josie Merrill
+7/26/2016,3,Hydrated,Isabel Quinn
+7/26/2016,5,Dehydrated,Annabelle Olsen
+7/26/2016,4,Slightly Dehydrated,Megan Britt
+7/26/2016,2,Well Hydrated,Tiffany Morrison
+7/25/2016,3,Hydrated,Delia Alston
+7/25/2016,2,Well Hydrated,Tiffany Morrison
+7/24/2016,4,Slightly Dehydrated,Tasha Conner
+7/24/2016,2,Well Hydrated,Delia Alston
+7/24/2016,2,Well Hydrated,Cassandra White
+7/24/2016,2,Well Hydrated,Josie Merrill
+7/24/2016,4,Slightly Dehydrated,Isabel Quinn
+7/24/2016,5,Dehydrated,Megan Britt
+7/24/2016,2,Well Hydrated,Tiffany Morrison
+7/23/2016,1,Hyper Hydrated,Saundra Maldonado
+7/23/2016,3,Hydrated,May Garner
+7/23/2016,2,Well Hydrated,Delia Alston
+7/23/2016,3,Hydrated,Kathleen Barnes
+7/23/2016,1,Hyper Hydrated,Cassandra White
+7/23/2016,2,Well Hydrated,Marta Saunders
+7/23/2016,3,Hydrated,Megan Britt
+7/23/2016,2,Well Hydrated,Tiffany Morrison
+7/22/2016,3,Hydrated,Tasha Conner
+7/22/2016,2,Well Hydrated,Delia Alston
+7/22/2016,3,Hydrated,Kathleen Barnes
+7/22/2016,3,Hydrated,Cassandra White
+7/22/2016,2,Well Hydrated,Josie Merrill
+7/22/2016,3,Hydrated,Isabel Quinn
+7/22/2016,3,Hydrated,Megan Britt
+7/22/2016,2,Well Hydrated,Tiffany Morrison
+7/21/2016,2,Well Hydrated,Tasha Conner
+7/21/2016,1,Hyper Hydrated,Saundra Maldonado
+7/21/2016,3,Hydrated,May Garner
+7/21/2016,3,Hydrated,Delia Alston
+7/21/2016,3,Hydrated,Cassandra White
+7/21/2016,2,Well Hydrated,Josie Merrill
+7/21/2016,2,Well Hydrated,Isabel Quinn
+7/21/2016,4,Slightly Dehydrated,Megan Britt
+7/21/2016,2,Well Hydrated,Tiffany Morrison
+7/20/2016,2,Well Hydrated,Tasha Conner
+7/20/2016,2,Well Hydrated,Saundra Maldonado
+7/20/2016,3,Hydrated,May Garner
+7/20/2016,2,Well Hydrated,Jana Barton
+7/20/2016,3,Hydrated,Delia Alston
+7/20/2016,3,Hydrated,Kathleen Barnes
+7/20/2016,4,Slightly Dehydrated,Cassandra White
+7/20/2016,4,Slightly Dehydrated,Cassandra White
+7/20/2016,4,Slightly Dehydrated,Cassandra White
+7/20/2016,2,Well Hydrated,Josie Merrill
+7/20/2016,3,Hydrated,Isabel Quinn
+7/20/2016,2,Well Hydrated,Marta Saunders
+7/20/2016,3,Hydrated,Megan Britt
+7/20/2016,2,Well Hydrated,Tiffany Morrison
+7/19/2016,1,Hyper Hydrated,Saundra Maldonado
+7/19/2016,3,Hydrated,Delia Alston
+7/19/2016,2,Well Hydrated,Tiffany Morrison
+7/18/2016,3,Hydrated,Tasha Conner
+7/18/2016,1,Hyper Hydrated,Saundra Maldonado
+7/18/2016,3,Hydrated,May Garner
+7/18/2016,3,Hydrated,Delia Alston
+7/18/2016,4,Slightly Dehydrated,Cassandra White
+7/18/2016,3,Hydrated,Isabel Quinn
+7/18/2016,4,Slightly Dehydrated,Megan Britt
+7/18/2016,2,Well Hydrated,Tiffany Morrison
+7/17/2016,2,Well Hydrated,Tasha Conner
+7/17/2016,2,Well Hydrated,Saundra Maldonado
+7/17/2016,3,Hydrated,Delia Alston
+7/17/2016,3,Hydrated,Cassandra White
+7/17/2016,3,Hydrated,Isabel Quinn
+7/17/2016,3,Hydrated,Megan Britt
+7/17/2016,2,Well Hydrated,Tiffany Morrison
+7/16/2016,3,Hydrated,Delia Alston
+7/16/2016,3,Hydrated,Cassandra White
+7/16/2016,3,Hydrated,Annabelle Olsen
+7/16/2016,3,Hydrated,Megan Britt
+7/16/2016,2,Well Hydrated,Tiffany Morrison
+7/15/2016,2,Well Hydrated,Tasha Conner
+7/15/2016,1,Hyper Hydrated,Saundra Maldonado
+7/15/2016,2,Well Hydrated,May Garner
+7/15/2016,3,Hydrated,Delia Alston
+7/15/2016,2,Well Hydrated,Kathleen Barnes
+7/15/2016,3,Hydrated,Cassandra White
+7/15/2016,2,Well Hydrated,Isabel Quinn
+7/15/2016,3,Hydrated,Marta Saunders
+7/15/2016,4,Slightly Dehydrated,Annabelle Olsen
+7/15/2016,4,Slightly Dehydrated,Megan Britt
+7/15/2016,2,Well Hydrated,Tiffany Morrison
+7/14/2016,2,Well Hydrated,Tasha Conner
+7/14/2016,1,Hyper Hydrated,Saundra Maldonado
+7/14/2016,3,Hydrated,May Garner
+7/14/2016,3,Hydrated,Delia Alston
+7/14/2016,3,Hydrated,Kathleen Barnes
+7/14/2016,3,Hydrated,Cassandra White
+7/14/2016,2,Well Hydrated,Josie Merrill
+7/14/2016,3,Hydrated,Isabel Quinn
+7/14/2016,4,Slightly Dehydrated,Annabelle Olsen
+7/14/2016,3,Hydrated,Megan Britt
+7/14/2016,2,Well Hydrated,Tiffany Morrison
+7/13/2016,2,Well Hydrated,Tasha Conner
+7/13/2016,4,Slightly Dehydrated,Delia Alston
+7/13/2016,2,Well Hydrated,Tiffany Morrison
+7/12/2016,2,Well Hydrated,Tasha Conner
+7/12/2016,1,Hyper Hydrated,Saundra Maldonado
+7/12/2016,3,Hydrated,May Garner
+7/12/2016,3,Hydrated,Delia Alston
+7/12/2016,4,Slightly Dehydrated,Kathleen Barnes
+7/12/2016,3,Hydrated,Cassandra White
+7/12/2016,2,Well Hydrated,Isabel Quinn
+7/12/2016,2,Well Hydrated,Marta Saunders
+7/12/2016,5,Dehydrated,Megan Britt
+7/12/2016,2,Well Hydrated,Tiffany Morrison
+7/11/2016,3,Hydrated,Tasha Conner
+7/11/2016,1,Hyper Hydrated,Saundra Maldonado
+7/11/2016,2,Well Hydrated,May Garner
+7/11/2016,3,Hydrated,Delia Alston
+7/11/2016,3,Hydrated,Kathleen Barnes
+7/11/2016,4,Slightly Dehydrated,Cassandra White
+7/11/2016,4,Slightly Dehydrated,Isabel Quinn
+7/11/2016,4,Slightly Dehydrated,Silvia Pitts
+7/11/2016,2,Well Hydrated,Marta Saunders
+7/11/2016,3,Hydrated,Annabelle Olsen
+7/11/2016,3,Hydrated,Megan Britt
+7/11/2016,2,Well Hydrated,Tiffany Morrison
+7/10/2016,4,Slightly Dehydrated,Delia Alston
+7/10/2016,2,Well Hydrated,Josie Merrill
+7/10/2016,4,Slightly Dehydrated,Marta Saunders
+7/10/2016,2,Well Hydrated,Tiffany Morrison
+7/9/2016,2,Well Hydrated,Delia Alston
+7/9/2016,3,Hydrated,Cassandra White
+7/9/2016,1,Hyper Hydrated,Josie Merrill
+7/9/2016,3,Hydrated,Isabel Quinn
+7/9/2016,3,Hydrated,Megan Britt
+7/9/2016,2,Well Hydrated,Tiffany Morrison
+7/8/2016,3,Hydrated,Tasha Conner
+7/8/2016,3,Hydrated,May Garner
+7/8/2016,3,Hydrated,Delia Alston
+7/8/2016,4,Slightly Dehydrated,Cassandra White
+7/8/2016,2,Well Hydrated,Josie Merrill
+7/8/2016,3,Hydrated,Isabel Quinn
+7/8/2016,2,Well Hydrated,Marta Saunders
+7/8/2016,4,Slightly Dehydrated,Megan Britt
+7/8/2016,2,Well Hydrated,Tiffany Morrison
+7/7/2016,4,Slightly Dehydrated,Tasha Conner
+7/7/2016,2,Well Hydrated,Saundra Maldonado
+7/7/2016,4,Slightly Dehydrated,May Garner
+7/7/2016,4,Slightly Dehydrated,Delia Alston
+7/7/2016,4,Slightly Dehydrated,Cassandra White
+7/7/2016,2,Well Hydrated,Josie Merrill
+7/7/2016,3,Hydrated,Isabel Quinn
+7/7/2016,2,Well Hydrated,Marta Saunders
+7/7/2016,3,Hydrated,Megan Britt
+7/7/2016,2,Well Hydrated,Tiffany Morrison
+7/6/2016,2,Well Hydrated,Tasha Conner
+7/6/2016,1,Hyper Hydrated,Saundra Maldonado
+7/6/2016,3,Hydrated,May Garner
+7/6/2016,3,Hydrated,Delia Alston
+7/6/2016,3,Hydrated,Kathleen Barnes
+7/6/2016,3,Hydrated,Cassandra White
+7/6/2016,3,Hydrated,Isabel Quinn
+7/6/2016,3,Hydrated,Marta Saunders
+7/6/2016,2,Well Hydrated,Megan Britt
+7/5/2016,4,Slightly Dehydrated,Tasha Conner
+7/5/2016,1,Hyper Hydrated,Saundra Maldonado
+7/5/2016,3,Hydrated,May Garner
+7/5/2016,3,Hydrated,Delia Alston
+7/5/2016,3,Hydrated,Kathleen Barnes
+7/5/2016,3,Hydrated,Cassandra White
+7/5/2016,1,Hyper Hydrated,Josie Merrill
+7/5/2016,3,Hydrated,Isabel Quinn
+7/5/2016,2,Well Hydrated,Megan Britt
+7/5/2016,2,Well Hydrated,Tiffany Morrison
+7/4/2016,2,Well Hydrated,Saundra Maldonado
+7/4/2016,3,Hydrated,May Garner
+7/4/2016,4,Slightly Dehydrated,Delia Alston
+7/4/2016,4,Slightly Dehydrated,Cassandra White
+7/4/2016,2,Well Hydrated,Josie Merrill
+7/4/2016,3,Hydrated,Megan Britt
+7/4/2016,2,Well Hydrated,Tiffany Morrison
+7/3/2016,1,Hyper Hydrated,Saundra Maldonado
+7/3/2016,3,Hydrated,May Garner
+7/3/2016,3,Hydrated,Delia Alston
+7/3/2016,4,Slightly Dehydrated,Cassandra White
+7/3/2016,2,Well Hydrated,Josie Merrill
+7/3/2016,4,Slightly Dehydrated,Isabel Quinn
+7/3/2016,2,Well Hydrated,Marta Saunders
+7/3/2016,3,Hydrated,Megan Britt
+7/3/2016,2,Well Hydrated,Tiffany Morrison
+7/2/2016,1,Hyper Hydrated,Saundra Maldonado
+7/2/2016,3,Hydrated,May Garner
+7/2/2016,2,Well Hydrated,Delia Alston
+7/2/2016,3,Hydrated,Cassandra White
+7/2/2016,3,Hydrated,Isabel Quinn
+7/2/2016,2,Well Hydrated,Marta Saunders
+7/2/2016,3,Hydrated,Megan Britt
+7/2/2016,2,Well Hydrated,Tiffany Morrison
+7/1/2016,1,Hyper Hydrated,Saundra Maldonado
+7/1/2016,2,Well Hydrated,May Garner
+7/1/2016,4,Slightly Dehydrated,Delia Alston
+7/1/2016,2,Well Hydrated,Kathleen Barnes
+7/1/2016,4,Slightly Dehydrated,Cassandra White
+7/1/2016,2,Well Hydrated,Josie Merrill
+7/1/2016,3,Hydrated,Isabel Quinn
+7/1/2016,3,Hydrated,Marta Saunders
+7/1/2016,3,Hydrated,Megan Britt
+7/1/2016,2,Well Hydrated,Tiffany Morrison

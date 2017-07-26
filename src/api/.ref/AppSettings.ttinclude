@@ -1,0 +1,298 @@
+<#@ template language="C#" debug="true" hostspecific="true" #>
+<#@ output extension=".cs" #>
+<#@ assembly Name="System.Core.dll" #>
+<#@ assembly name="EnvDTE" #>
+<#@ assembly name="System.Configuration"#>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Diagnostics" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Collections" #>
+<#@ import namespace="System.Collections.Specialized"#>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Configuration" #>
+using System;
+using System.Configuration;
+<# if(!string.IsNullOrEmpty(customConfigName)){ #>
+using System.IO;
+<# } #>
+
+<#
+	var project = GetProjectContainingT4();
+	string ns = project.Properties.Item("DefaultNamespace").Value.ToString();
+#>
+namespace <#= ns #>
+{
+	public static class AppSettings
+	{
+<#
+	ExeConfigurationFileMap configFile = new ExeConfigurationFileMap();
+	configFile.ExeConfigFilename = GetConfigPath();
+
+	if (string.IsNullOrEmpty(configFile.ExeConfigFilename)){
+		throw new ArgumentNullException("The project does not contain App.config or Web.config file (or custom specified config file).");
+	}
+        
+	var config = System.Configuration.ConfigurationManager.OpenMappedExeConfiguration(configFile, ConfigurationUserLevel.None);
+	var appSettings = config.AppSettings.Settings;
+
+	foreach(var setting in appSettings.AllKeys){
+		if(!ignorablePropetries.Contains(setting)){
+#>
+		private static string <#= GetSettingPrivateName(setting)#>;
+<# }} #>
+
+		#region Public
+
+<#
+	foreach(var setting in appSettings.AllKeys){
+		if(!ignorablePropetries.Contains(setting)){
+#>
+		public static string <#= GetSettingPublicName(setting) #>
+        {
+            get { return <#= GetSettingPrivateName(setting) #> ?? (<#= GetSettingPrivateName(setting) #> = GetConfigurationSetting("<#= setting #>")); }
+			set { <#= GetSettingPrivateName(setting) #> = value; }
+        }
+
+<# }} #>
+		public static void Reset()
+		{
+<# foreach(var setting in appSettings.AllKeys){
+	if(!ignorablePropetries.Contains(setting)){ #>
+			<#= GetSettingPrivateName(setting) #> = null;
+<# }} #>
+		}
+
+		#endregion
+
+		#region Connection strings
+
+		public static class ConnectionStrings
+		{
+<#
+	var connectionStringsSection = config.ConnectionStrings;
+
+	foreach(ConnectionStringSettings connectionString in connectionStringsSection.ConnectionStrings){
+#>
+			private static string <#= GetSettingPrivateName(connectionString.Name)#>;
+<# } #>
+
+<# foreach(ConnectionStringSettings connectionString in connectionStringsSection.ConnectionStrings){ #>
+			public static string <#= GetSettingPublicName(connectionString.Name) #>
+			{
+				get { return <#= GetSettingPrivateName(connectionString.Name) #> ?? (<#= GetSettingPrivateName(connectionString.Name) #> = GetConnectionString("<#= connectionString.Name #>")); }
+				set { <#= GetSettingPrivateName(connectionString.Name) #> = value; }
+			}
+
+<# } #>
+		}
+
+		#endregion
+
+		#region Helpers
+
+<# if(string.IsNullOrEmpty(customConfigName)){ #>
+		private static string GetConfigurationSetting(string settingName)
+        {
+            if (ConfigurationManager.AppSettings.Count != 0)
+            {
+                try
+                {
+                    var value = ConfigurationManager.AppSettings.Get(settingName);
+                    if (value == null)
+                    {
+                        throw new ConfigurationErrorsException("Invalid configuration setting: " + settingName);
+                    }
+                    return value;
+                }
+                catch (Exception e)
+                {
+                    throw new ConfigurationErrorsException("Invalid configuration setting: " + settingName, e);
+                }
+            }
+            throw new ConfigurationErrorsException("Invalid configuration. Required AppSettings section is missing.");
+        }
+
+		private static string GetConnectionString(string connectionStringName)
+        {
+			try
+			{
+                var value = ConfigurationManager.ConnectionStrings[connectionStringName].ConnectionString;
+                if (value == null)
+                {
+                    throw new ConfigurationErrorsException("Invalid connection string name: " + connectionStringName);
+                }
+                return value;
+            }
+            catch (Exception e)
+            {
+                throw new ConfigurationErrorsException("Invalid connection string name: " + connectionStringName, e);
+            }
+        }
+<# }else{ #>
+		private static string GetConfigurationSetting(string settingName)
+        {
+            // First load configuration file which name differs from the standard app.config
+            ExeConfigurationFileMap configurationFile = new ExeConfigurationFileMap
+            {
+                ExeConfigFilename = Path.Combine(
+                    AppDomain.CurrentDomain.BaseDirectory,
+                    "<#= customConfigName #>")
+            };
+            Configuration configuration = ConfigurationManager.OpenMappedExeConfiguration(configurationFile, ConfigurationUserLevel.None);
+            AppSettingsSection appSettingsSection = configuration.AppSettings;
+
+            // If there is no appication settings throw exception
+            if ((appSettingsSection.Settings.Count == 0))
+            {
+                throw new ConfigurationErrorsException("Invalid configuration. Required AppSettings section is missing.");
+            }
+
+            // Try to retrieve desired application setting value
+            try
+            {
+                string value = appSettingsSection.Settings[settingName].Value;
+                if (null == value)
+                {
+                    throw new ConfigurationErrorsException("Invalid configuration setting: " + settingName);
+                }
+                return value;
+            }
+            catch (Exception e)
+            {
+                throw new ConfigurationErrorsException("Invalid configuration setting: " + settingName, e);
+            }
+        }
+
+		private static string GetConnectionString(string connectionStringName)
+        {
+            // First load configuration file which name differs from the standard app.config
+            ExeConfigurationFileMap configurationFile = new ExeConfigurationFileMap
+            {
+                ExeConfigFilename = Path.Combine(
+                    AppDomain.CurrentDomain.BaseDirectory,
+                    "<#= customConfigName #>")
+            };
+            Configuration configuration = ConfigurationManager.OpenMappedExeConfiguration(configurationFile, ConfigurationUserLevel.None);
+            ConnectionStringsSection connectionStringsSection = configuration.ConnectionStrings;
+
+            // Try to retrieve desired connection stringvalue
+            try
+            {
+                var value = ConfigurationManager.ConnectionStrings[connectionStringName].ConnectionString;
+                if (value == null)
+                {
+                    throw new ConfigurationErrorsException("Invalid connection string name: " + connectionStringName);
+                }
+                return value;
+            }
+            catch (Exception e)
+            {
+                throw new ConfigurationErrorsException("Invalid connection string name: " + connectionStringName, e);
+            }
+        }
+<# } #>
+
+		#endregion
+	}
+}
+
+<#+
+	string customConfigName = "";
+	List<string> ignorablePropetries = new List<string>
+	{
+		"webpages:Version", "webpages:Enabled", "PreserveLoginUrl", "ClientValidationEnabled", "UnobtrusiveJavaScriptEnabled"
+	};
+
+	public EnvDTE.Project GetActiveProject()  
+	{
+		IServiceProvider _ServiceProvider = (IServiceProvider)Host;
+        if (_ServiceProvider == null)
+            throw new Exception("Host property returned unexpected value (null)");
+		
+        EnvDTE.DTE dte = (EnvDTE.DTE)_ServiceProvider.GetService(typeof(EnvDTE.DTE));
+        if (dte == null)
+            throw new Exception("Unable to retrieve EnvDTE.DTE");
+		
+        Array activeSolutionProjects = (Array)dte.ActiveSolutionProjects;
+        if (activeSolutionProjects == null)
+            throw new Exception("DTE.ActiveSolutionProjects returned null");
+		
+        EnvDTE.Project dteProject = (EnvDTE.Project)activeSolutionProjects.GetValue(0);
+        if (dteProject == null)
+            throw new Exception("DTE.ActiveSolutionProjects[0] returned null");
+		
+        return dteProject;
+	}
+
+    public EnvDTE.Project GetProjectContainingT4()
+    {
+		IServiceProvider _ServiceProvider = (IServiceProvider)Host;
+        if (_ServiceProvider == null)
+            throw new Exception("Host property returned unexpected value (null)");
+		
+        EnvDTE.DTE dte = (EnvDTE.DTE)_ServiceProvider.GetService(typeof(EnvDTE.DTE));
+        if (dte == null)
+            throw new Exception("Unable to retrieve EnvDTE.DTE");
+ 
+        // Find the .tt file's ProjectItem
+        EnvDTE.ProjectItem projectItem = dte.Solution.FindProjectItem(Host.TemplateFile);
+ 
+        // If the .tt file is not opened, open it
+        if (projectItem.Document == null)
+            projectItem.Open(EnvDTE.Constants.vsViewKindCode);
+ 
+		return projectItem.ContainingProject;
+    }
+
+	private string GetProjectPath()
+    {
+        EnvDTE.Project project = GetProjectContainingT4();
+        System.IO.FileInfo info = new System.IO.FileInfo(project.FullName);
+        return info.Directory.FullName;
+	}
+
+	private string GetConfigPath()
+    {
+        EnvDTE.Project project = GetProjectContainingT4();
+        foreach (EnvDTE.ProjectItem item in project.ProjectItems)
+        {
+			if(String.IsNullOrEmpty(customConfigName))
+			{
+				// if it is the app.config file, then open it up
+				if (item.Name.Equals("App.config", StringComparison.InvariantCultureIgnoreCase) || item.Name.Equals("Web.config", StringComparison.InvariantCultureIgnoreCase))
+					return GetProjectPath() + "\\" + item.Name;
+			}
+			else
+			{
+				if(item.Name.Equals(customConfigName, StringComparison.InvariantCultureIgnoreCase))
+					return GetProjectPath() + "\\" + item.Name;
+			}
+            
+        }
+        return String.Empty;
+    }
+
+	public string GetSettingPrivateName(string settingName)
+	{
+		if(settingName.StartsWith("WP") || settingName.StartsWith("wp"))
+			settingName = settingName.Substring(2, settingName.Length - 2);
+
+		string escapedSettingName = settingName.Replace(":", "").Replace(".", "").Replace("-", "").Replace(" ", "");
+		string privateSettingName = String.Format("_{0}{1}", escapedSettingName.First().ToString().ToLowerInvariant(), escapedSettingName.Substring(1));
+
+		return privateSettingName;
+	}
+
+	public string GetSettingPublicName(string settingName)
+	{
+		if(settingName.StartsWith("WP") || settingName.StartsWith("wp"))
+			settingName = settingName.Substring(2, settingName.Length - 2);
+
+		string escapedSettingName = settingName.Replace(":", "").Replace(".", "").Replace("-", "").Replace(" ", "");
+
+		string publicSettingName = String.Format("{0}{1}", escapedSettingName.First().ToString().ToUpperInvariant(), escapedSettingName.Substring(1));
+	
+		return publicSettingName;
+	}
+#>

@@ -1,0 +1,17 @@
+﻿{
+  "ConnectionStrings": {
+    "TppLocalDbConnection": "Data Source=<Insert Local Server Name Here.>;Initial Catalog=<Insert Local DB Here.>;Integrated Security=True",
+    "TppDbConnection": "Server=tcp:<Insert Server Name Here.>.database.windows.net,1433;Data Source=<Insert DB Name Here.>.database.windows.net;Initial Catalog=<Insert Catalog Name Here.>;Persist Security Info=False;User ID=<Insert User ID Here.>;Password=<Insert Password Here.>;Pooling=False;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30"
+  },
+  "AAD": {
+    "Url": "<Insert URL Here.>",
+    "Instance": "https://login.microsoftonline.com/{0}", //Standard AAD Instance.
+    "Tenant": "<Insert AAD Tenant Here.>",
+    "Audience": "<Insert Tenant Here.>",
+    "ClientID": "<Insert Client ID Here.>",
+    "ClientKey": "<Insert Client Key Here.>"
+  },
+  "Benchmark": {
+    "NumberOfRuns": 30 
+  }
+}

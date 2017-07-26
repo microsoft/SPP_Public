@@ -1,0 +1,508 @@
+﻿{
+  "$schema": "http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    /* Database Server */
+    "databaseserver-name": {
+      "type": "string"
+    },
+    "databaseserver-locationName": {
+      "type": "string"
+    },
+    "databaseserver-kind": {
+      "type": "string"
+    },
+    "databaseserver-version": {
+      "type": "string"
+    },
+    "databaseserver-admin": {
+      "type": "string"
+    },
+    "databaseserver-password": {
+      "type": "string"
+    },
+
+    /* Database Master */
+    "databasemaster-name": {
+      "type": "string"
+    },
+    "databasemaster-kind": {
+      "type": "string"
+    },
+    "databasemaster-location": {
+      "type": "string"
+    },
+    "databasemaster-edition": {
+      "type": "string"
+    },
+    "databasemaster-status": {
+      "type": "string"
+    },
+    "databasemaster-collation": {
+      "type": "string"
+    },
+    "databasemaster-maxSizeBytes": {
+      "type": "string"
+    },
+    "databasemaster-requestedServiceObjectiveName": {
+      "type": "string"
+    },
+    "databasemaster-defaultSecondaryLocation": {
+      "type": "string"
+    },
+    "databasemaster-containmentState": {
+      "type": "int"
+    },
+    "databasemaster-readScale": {
+      "type": "string"
+    },
+    /* Database Main */
+    "databasemain-name": {
+      "type": "string"
+    },
+    "databasemain-kind": {
+      "type": "string"
+    },
+    "databasemain-location": {
+      "type": "string"
+    },
+    "databasemain-edition": {
+      "type": "string"
+    },
+    "databasemain-status": {
+      "type": "string"
+    },
+    "databasemain-collation": {
+      "type": "string"
+    },
+    "databasemain-maxSizeBytes": {
+      "type": "string"
+    },
+    "databasemain-requestedServiceObjectiveName": {
+      "type": "string"
+    },
+    "databasemain-defaultSecondaryLocation": {
+      "type": "string"
+    },
+    "databasemain-containmentState": {
+      "type": "int"
+    },
+    "databasemain-readScale": {
+      "type": "string"
+    },
+    /* Database Firewall */
+    "databasefirewall-kind": {
+      "type": "string"
+    },
+    "databasefirewall-location": {
+      "type": "string"
+    },
+
+    "SqlDataImportStorageKeyType": {
+      "type": "string",
+      "minLength": 1
+    },
+    "SqlDataImportStorageKey": {
+      "type": "securestring"
+    },
+    "SqlDataImportStorageUri": {
+      "type": "string",
+      "minLength": 1
+    },
+
+
+    /* Api App Service */
+    "appservice-name": {
+      "type": "string"
+    },
+    "appservice-hostingPlanName": {
+      "type": "string"
+    },
+    "appservice-location": {
+      "type": "string"
+    },
+    "appservice-hostingEnvironment": {
+      "type": "string"
+    },
+    "appservice-websiteNodeDefaultVersion": {
+      "type": "string"
+    },
+    "appservice-defaultCultureCode": {
+      "type": "string"
+    },
+    "appservice-configLocation": {
+      "type": "string"
+    },
+    "appservice-configNumberOfWorkers": {
+      "type": "int"
+    },
+    "appservice-configNetFrameworkVersion": {
+      "type": "string"
+    },
+    "appservice-configPhpVersion": {
+      "type": "string"
+    },
+    "appservice-configPythonVersion": {
+      "type": "string"
+    },
+    "appservice-configNodeVersion": {
+      "type": "string"
+    },
+    "appservice-configLinuxFxVersion": {
+      "type": "string"
+    },
+    "appservice-configRequestTracingEnabled": {
+      "type": "bool"
+    },
+    "appservice-configRemoteDebuggingEnabled": {
+      "type": "bool"
+    },
+    "appservice-configHttpLoggingEnabled": {
+      "type": "bool"
+    },
+    "appservice-configLogsDirectorySizeLimit": {
+      "type": "int"
+    },
+    "appservice-configDetailedErrorLoggingEnabled": {
+      "type": "bool"
+    },
+    "appservice-configUse32BitWorkerProcess": {
+      "type": "bool"
+    },
+    "appservice-configwebSocketsEnabled": {
+      "type": "bool"
+    },
+    "appservice-configAlwaysOn": {
+      "type": "bool"
+    },
+    "appservice-configAppCommandLine": {
+      "type": "string"
+    },
+    "appservice-configManagedPipelineMode": {
+      "type": "int"
+    },
+    "appservice-configVirtualPath": {
+      "type": "string"
+    },
+    "appservice-configPhysicalPath": {
+      "type": "string"
+    },
+    "appservice-configPreloadEnabled": {
+      "type": "bool"
+    },
+    "appserviceconfig-name": {
+      "type": "string"
+    },
+    "appService-repoURL": {
+      "type": "string"
+    },
+    "appService-branch": {
+      "type": "string"
+    },
+
+    /* Api App Service Plan */
+    "appserviceplan-name": {
+      "type": "string"
+    },
+    "appserviceplan-location": {
+      "type": "string"
+    },
+    "appserviceplan-sku": {
+      "type": "string"
+    },
+    "appserviceplan-skuCode": {
+      "type": "string"
+    },
+    "appserviceplan-skuSize": {
+      "type": "string"
+    },
+    "appserviceplan-skuFamily": {
+      "type": "string"
+    },
+    "appserviceplan-skuCapacity": {
+      "type": "int"
+    },
+    "appserviceplan-workerSize": {
+      "type": "string"
+    },
+    "appserviceplan-workerSizeId": {
+      "type": "string"
+    },
+    "appserviceplan-numberOfWorkers": {
+      "type": "string"
+    },
+    "appserviceplan-hostingEnvironment": {
+      "type": "string"
+    },
+    "appserviceplan-reserved": {
+      "type": "bool"
+    }
+  },
+  "resources": [
+    /* Database Server */
+    {
+      "type": "Microsoft.Sql/servers",
+      "kind": "[parameters('databaseserver-kind')]",
+      "name": "[parameters('databaseserver-name')]",
+      "apiVersion": "2014-04-01-preview",
+      "location": "[parameters('databaseserver-locationName')]",
+      "scale": null,
+      "properties": {
+        "administratorLogin": "[parameters('databaseserver-admin')]",
+        "administratorLoginPassword": "[parameters('databaseserver-password')]",
+        "version": "[parameters('databaseserver-version')]"
+      },
+      "dependsOn": []
+    },
+
+
+    /* Database Master */
+    {
+      "type": "Microsoft.Sql/servers/databases",
+      "kind": "[parameters('databasemaster-kind')]",
+      "name": "[parameters('databasemaster-name')]",
+      "apiVersion": "2014-04-01-preview",
+      "location": "[parameters('databasemaster-location')]",
+      "scale": null,
+      "properties": {
+        "edition": "[parameters('databasemaster-edition')]",
+        "status": "[parameters('databasemaster-status')]",
+        "collation": "[parameters('databasemaster-collation')]",
+        "maxSizeBytes": "[parameters('databasemaster-maxSizeBytes')]",
+        "requestedServiceObjectiveName": "[parameters('databasemaster-requestedServiceObjectiveName')]",
+        "defaultSecondaryLocation": "[parameters('databasemaster-defaultSecondaryLocation')]",
+        "containmentState": "[int(parameters('databasemaster-containmentState'))]",
+        "readScale": "[parameters('databasemaster-readScale')]"
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Sql/servers', parameters('databaseserver-name'))]"
+      ]
+    },
+
+
+    /* Database */
+    {
+      "type": "Microsoft.Sql/servers/databases",
+      "kind": "[parameters('databasemain-kind')]",
+      "name": "[parameters('databasemain-name')]",
+      "apiVersion": "2014-04-01-preview",
+      "location": "[parameters('databasemain-location')]",
+      "scale": null,
+      "properties": {
+        "edition": "[parameters('databasemain-edition')]",
+        "status": "[parameters('databasemain-status')]",
+        "collation": "[parameters('databasemain-collation')]",
+        "maxSizeBytes": "[parameters('databasemain-maxSizeBytes')]",
+        "requestedServiceObjectiveName": "[parameters('databasemain-requestedServiceObjectiveName')]",
+        "defaultSecondaryLocation": "[parameters('databasemain-defaultSecondaryLocation')]",
+        "containmentState": "[int(parameters('databasemain-containmentState'))]",
+        "readScale": "[parameters('databasemain-readScale')]"
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Sql/servers', parameters('databaseserver-name'))]"
+      ],
+      "resources": [
+        {
+          "name": "SqlDataImport",
+          "type": "extensions",
+          "apiVersion": "2014-04-01-preview",
+          "dependsOn": [
+            "[resourceId('Microsoft.Sql/servers/databases', split(parameters('databasemain-name'), '/')[0], split(parameters('databasemain-name'), '/')[1])]"
+          ],
+          "tags": {
+            "displayName": "SqlDataImport"
+          },
+          "properties": {
+            "storageKeyType": "[parameters('SqlDataImportStorageKeyType')]",
+            "storageKey": "[parameters('SqlDataImportStorageKey')]",
+            "storageUri": "[parameters('SqlDataImportStorageUri')]",
+            "administratorLogin": "[parameters('databaseserver-admin')]",
+            "administratorLoginPassword": "[parameters('databaseserver-password')]",
+            "operationMode": "Import"
+          }
+        }
+      ]
+    },
+
+    /* Database Firewall */
+    {
+      /* This one turns on the firewall and allows Azure IPs */
+      "type": "Microsoft.Sql/servers/firewallRules",
+      "kind": "[parameters('databasefirewall-kind')]",
+      "name": "[concat(parameters('databaseserver-name'), '/AllowAllWindowsAzureIps')]",
+      "apiVersion": "2014-04-01-preview",
+      "location": "[parameters('databasefirewall-location')]",
+      "scale": null,
+      "properties": {
+        "startIpAddress": "0.0.0.0",
+        "endIpAddress": "0.0.0.0"
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Sql/servers', parameters('databaseserver-name'))]"
+      ]
+    },
+
+    /* App Service */
+    {
+      "type": "Microsoft.Web/sites",
+      "name": "[parameters('appservice-name')]",
+      "kind": "app",
+      "apiVersion": "2016-03-01",
+      "location": "[parameters('appservice-location')]",
+      "properties": {
+        "name": "[parameters('appservice-name')]",
+        "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('appserviceplan-name'))]",
+        "hostingEnvironment": "[parameters('appservice-hostingEnvironment')]",
+        "hostNames": [ "[concat(parameters('appservice-name'), '.azurewebsites.net')]" ],
+        "clientAffinityEnabled": false,
+        "enabledHostNames": [
+          "[concat(parameters('appservice-name'), '.azurewebsites.net')]",
+          "[concat(parameters('appservice-name'), '.scm.azurewebsites.net')]"
+        ],
+        "hostNameSslStates": [
+          {
+            "name": "[concat(parameters('appservice-name'),'.azurewebsites.net')]",
+            "sslState": 0,
+            "thumbprint": null,
+            "ipBasedSslState": 0
+          },
+          {
+            "name": "[concat(parameters('appservice-name'),'.scm.azurewebsites.net')]",
+            "sslState": 0,
+            "thumbprint": null,
+            "ipBasedSslState": 0
+          }
+        ],
+        "siteConfig": {
+          "connectionStrings": [
+            {
+              "name": "TppDbConnection",
+              "connectionString": "[concat('data source=tcp:', parameters('databaseserver-name'), '.database.windows.net,1433;Initial Catalog=', parameters('databasemain-name'), ';Persist Security Info=False;User ID=', parameters('databaseserver-admin'),'; Password=',  parameters('databaseserver-password'), ';MultipleActiveResultSets=True;App=EntityFramework')]",
+              "type": "SQLAzure"
+            },
+            {
+              "name": "TppDbLocalConnection",
+              "connectionString": "[concat('data source=tcp:', parameters('databaseserver-name'), '.database.windows.net,1433;Initial Catalog=', parameters('databasemain-name'), ';Persist Security Info=False;User ID=', parameters('databaseserver-admin'),'; Password=',  parameters('databaseserver-password'), ';MultipleActiveResultSets=True;App=EntityFramework')]",
+              "type": "SQLAzure"
+            }
+          ]
+        }
+
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/serverfarms', parameters('appserviceplan-name'))]",
+        "[resourceId('Microsoft.Sql/servers', parameters('databaseserver-name'))]"
+      ],
+      "resources": [
+        {
+          "name": "appsettings",
+          "type": "config",
+          "apiVersion": "2016-08-01",
+          "dependsOn": [
+            "[resourceId('Microsoft.Web/sites', parameters('appservice-name'))]"
+          ],
+          "tags": {
+            "displayName": "[concat(parameters('appservice-name'),' Application Settings')]"
+          },
+          "properties": {
+            "WEBSITE_NODE_DEFAULT_VERSION": "[parameters('appservice-websiteNodeDefaultVersion')]"
+          }
+        }
+        /*,
+        {
+          "apiVersion": "2015-08-01",
+          "name": "web",
+          "type": "sourcecontrols",
+          "dependsOn": [
+            "[resourceId('Microsoft.Web/Sites', parameters('appservice-name'))]"
+          ],
+          "properties": {
+            "RepoUrl": "[parameters('appservice-repoURL')]",
+            "branch": "[parameters('appservice-branch')]",
+            "IsManualIntegration": true
+          }
+        }*/
+      ]
+    },
+
+
+    /* App Service Config */
+    {
+      "type": "Microsoft.Web/sites/config",
+      "name": "[parameters('appserviceconfig-name')]",
+      "apiVersion": "2015-08-01",
+      "location": "[parameters('appservice-configLocation')]",
+      "properties": {
+        "numberOfWorkers": "[int(parameters('appservice-configNumberOfWorkers'))]",
+        "defaultDocuments": [
+          "Default.htm",
+          "Default.html",
+          "Default.asp",
+          "index.htm",
+          "index.html",
+          "iisstart.htm",
+          "default.aspx",
+          "index.php",
+          "hostingstart.html"
+        ],
+        "netFrameworkVersion": "[parameters('appservice-configNetFrameworkVersion')]",
+        "phpVersion": "[parameters('appservice-configPhpVersion')]",
+        "pythonVersion": "[parameters('appservice-configPythonVersion')]",
+        "nodeVersion": "[parameters('appservice-configNodeVersion')]",
+        "linuxFxVersion": "[parameters('appservice-configLinuxFxVersion')]",
+        "requestTracingEnabled": "[bool(parameters('appservice-configRequestTracingEnabled'))]",
+        "remoteDebuggingEnabled": "[bool(parameters('appservice-configRemoteDebuggingEnabled'))]",
+        "httpLoggingEnabled": "[bool(parameters('appservice-configHttpLoggingEnabled'))]",
+        "logsDirectorySizeLimit": "[int(parameters('appservice-configLogsDirectorySizeLimit'))]",
+        "detailedErrorLoggingEnabled": "[bool(parameters('appservice-configDetailedErrorLoggingEnabled'))]",
+        "use32BitWorkerProcess": "[bool(parameters('appservice-configUse32BitWorkerProcess'))]",
+        "webSocketsEnabled": "[bool(parameters('appservice-configwebSocketsEnabled'))]",
+        "alwaysOn": "[bool(parameters('appservice-configAlwaysOn'))]",
+        "appCommandLine": "[parameters('appservice-configAppCommandLine')]",
+        "managedPipelineMode": "[int(parameters('appservice-configManagedPipelineMode'))]",
+        "virtualApplications": [
+          {
+            "virtualPath": "[parameters('appservice-configVirtualPath')]",
+            "physicalPath": "[parameters('appservice-configPhysicalPath')]",
+            "preloadEnabled": "[bool(parameters('appservice-configPreloadEnabled'))]"
+          }
+        ]
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/sites', parameters('appservice-name'))]"
+      ]
+    },
+
+
+    /*  App Service Plan */
+    {
+      "type": "Microsoft.Web/serverfarms",
+      "sku": {
+        "Tier": "[parameters('appserviceplan-sku')]",
+        "Name": "[parameters('appserviceplan-skuCode')]",
+        "Size": "[parameters('appserviceplan-skuSize')]",
+        "Family": "[parameters('appserviceplan-skuFamily')]",
+        "Capacity": "[int(parameters('appserviceplan-skuCapacity'))]"
+      },
+      "kind": "app",
+      "name": "[parameters('appserviceplan-name')]",
+      "apiVersion": "2016-03-01",
+      "location": "[parameters('appserviceplan-location')]",
+      "properties": {
+        "name": "[parameters('appserviceplan-name')]",
+        "workerSize": "[parameters('appserviceplan-workerSize')]",
+        "workerSizeId": "[parameters('appserviceplan-workerSizeId')]",
+        "numberOfWorkers": "[parameters('appserviceplan-numberOfWorkers')]",
+        "reserved": "[bool(parameters('appserviceplan-reserved'))]",
+        "hostingEnvironment": "[parameters('appserviceplan-hostingEnvironment')]"
+      }
+    }
+
+  ],
+  "outputs": {
+    "dbConnectionString": {
+      "value": "[concat('data source=tcp:', parameters('databaseserver-name'), '.database.windows.net,1433;Initial Catalog=', parameters('databasemain-name'), ';Persist Security Info=False;User ID=', parameters('databaseserver-admin'),'; Password=',  parameters('databaseserver-password'), ';MultipleActiveResultSets=True;App=EntityFramework')]",
+      "type": "string"
+    }
+  }
+}
