@@ -28,6 +28,10 @@ namespace TPP.Core.Data.Entities
         [StringLength(50)]
         public string CameraName { get; set; }
 
+        [StringLength(50)]
+        public string Location { get; set; }
+
+
         public int MinDetectableFaceCoveragePercentage { get; set; }
     }
 }

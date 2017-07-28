@@ -12,6 +12,7 @@ namespace TPP.Core.Services.Models
         public string EmotionApiKey { get; set; }
         public string BingApiKey { get; set; }
         public string CameraName { get; set; }
+	    public string Location { get; set; }
         public uint MinDetectableFaceCoveragePercentage { get; set; }
 
         //Navigation keys
