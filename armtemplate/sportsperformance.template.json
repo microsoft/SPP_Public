@@ -325,8 +325,9 @@
     },
 
     /* Database Firewall */
+	/* 	This one turns on the firewall and allows Azure IPs */
+	/*
     {
-      /* This one turns on the firewall and allows Azure IPs */
       "type": "Microsoft.Sql/servers/firewallRules",
       "kind": "[parameters('databasefirewall-kind')]",
       "name": "[concat(parameters('databaseserver-name'), '/AllowAllWindowsAzureIps')]",
@@ -341,7 +342,8 @@
         "[resourceId('Microsoft.Sql/servers', parameters('databaseserver-name'))]"
       ]
     },
-
+	*/
+	
     /* App Service */
     {
       "type": "Microsoft.Web/sites",

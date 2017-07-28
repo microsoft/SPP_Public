@@ -15,12 +15,6 @@
     "databaseserver-version": {
       "value": "12.0"
     },
-    "databaseserver-admin": {
-      "value": "sportsperfadmin"
-    },
-    "databaseserver-password": {
-      "value": "NP_B(=`p:3Jb&E#K" /* TODO: Specify DB password */
-    },
     /* Database Master */
     "databasemaster-name": {
       "value": "sportsperfdatabase/master"
@@ -95,10 +89,10 @@
       "value": "Primary"
     },
     "SqlDataImportStorageKey": {
-      "value": "avfynM2cs2j4MdSy8dKTi9rHkP1Obkq7tZESmDxPWy8bC3WaGPdmG1pYD3wMSTzT+A0kQArTJ7heiwJCLrlu2g=="
+      "value": "YOURSTORAGEKEY"
     },
     "SqlDataImportStorageUri": {
-      "value": "https://sppdataloaderstorage.blob.core.windows.net/248b32b8-11a0-4a65-8f2d-ec203882d475-file-staging/SPP-Schema.bacpac"
+      "value": "[STORAGE URL]/SPP-Schema.bacpac"
     },
 
     /* Database Firewall */
