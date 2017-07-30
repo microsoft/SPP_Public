@@ -23,10 +23,13 @@ In this GitHub repo, you'll find a core set of resources that you can use to get
 The folder structure and contents are as follows: 
 
 * armtemplate
+* how-to-videos
 * src/api
 * templates
 
 In the *armtemplate* folder, you'll find a PowerShell script and associated ARM template files. There is some configuration required for the ARM template, so be sure to read the readme.md file to understand these configuration options. These files enable you to automatically deploy the open-source SPP code into your own Azure subscription. 
+
+In the *how-to-videos*, you'll find some introductory how-to videos that walk you through some of the basics, such as a walkthrough of the GitHub repo, getting started with Power BI, etc. 
 
 In the *src/api* folder, you'll find a set of SPP APIs--these are a sub-set of our broader set of APIs but will get you started developing on SPP. 
 
@@ -73,6 +76,8 @@ Because the Sports Performance Platform relies on Power BI as the reporting fron
 
 Currently, you can only install the desktop version on your Windows machine. However, there is a very rich browser experience, so you can sign in and create reports from powerbi.com from both your Windows and Mac machines. 
 
+For more information, check out the how-to video here: https://github.com/Microsoft/SPP_Public/tree/master/how-to-videos/SPP_Video_Two_Overview_of_SPP_Power_BI_Template. 
+
 #### Step 4 - Restoring Azure SQL Database
 
 While this is for more advanced users, you will at some point want to begin to explore machine learning. You can do this through theAzure Machine Learning (ML) Studio: https://studio.azureml.net/. Click the Sign Up button to get started and follow the instructions. 
@@ -81,19 +86,21 @@ While this is for more advanced users, you will at some point want to begin to e
 
 Using a BACPAC file—which is a SQL database file data-type standard—we can restore a database that already stores the necessary tables and data for SPP. 
 
+Note that you'll need to first set up an Azure storage with a container and then upload the BACPAC file to that storage container. 
+
 Here are the steps to get your database restored:
 
 * Login to the Azure portal and go to your SQL Server. 
 * After selecting your server, you will see the option to “Import Database.” 
 * Upon clicking “Import Database”, fill out the following information:  
 * Subscription – Name of the subscription you are using  
-* Storage – Select the storage account that you have put your BACPAC file in.     
+* Storage – Select the storage account that you have put your BACPAC file in. You will need to navigate to the specific BACPAC file in your storage container.    
   * For more information, use a tool like Azure Storage Explorer to upload the BACPAC file from GitHub to blob storage.   
-  * Pricing Tier – Basic w/ Storage of 100 MBServer
-  * Admin and password as denoted by your SQL Server
+* Pricing Tier – Basic w/ Storage of 100 MBServer
+* Admin and password as denoted by your SQL Server
 * Click done and it will proceed to restore the database to Azure SQL. 
 
-Check to see if it is complete by connecting to the server with SQL Server Management Studio. 
+Check to see if it is complete by connecting to the server with SQL Server Management Studio. Assuming the database was successfully imported and restored, you can then connect directly to the SQL Database from Power BI and begin to create your Performance Analytics dashboards. 
 
 ### Use SSIS to Import Excel files into an Azure SQL Database
 
@@ -124,6 +131,8 @@ At the end, you should have 7 new external tables that weren’t a part of the o
 ### Building Power BI Reports
 
 Now that we have the 7 tables that we will use in our PowerBI report, we can build the PowerBI report to understand the Seattle Reign’s wellness and readiness. To build the reports from scratch will require extensive knowledge in Power Query—PowerBI’s tool for reading-in data from data stores like Azure SQL databases. 
+
+Note that there is a great Power BI course on edx.org. To find the online course, navigate to www.edx.org and then search for "Power BI."
 
 If you would like to build the PowerBI report from scratch, you can always reverse engineer the PowerBI file that was provided to you in GitHub.
 
