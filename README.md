@@ -16,8 +16,38 @@ As a part of this launch, we mentioned that we would open source a portion of th
 
 To help you get started, we've included a Getting Started tutorial, so you can get the code deployed and start playing around with thedata. We will publish future blog-posts, in which we will explore different technical sides of the platform. 
 
+## What is in the Open-Source SPP Repo?
+
+In this GitHub repo, you'll find a core set of resources that you can use to get started using SPP. There are three major folders with some additional files with which you'll want to familiarize yourself. 
+
+The folder structure and contents are as follows: 
+
+* armtemplate
+* src/api
+* templates
+
+In the *armtemplate* folder, you'll find a PowerShell script and associated ARM template files. There is some configuration required for the ARM template, so be sure to read the readme.md file to understand these configuration options. These files enable you to automatically deploy the open-source SPP code into your own Azure subscription. 
+
+In the *src/api* folder, you'll find a set of SPP APIs--these are a sub-set of our broader set of APIs but will get you started developing on SPP. 
+
+In the *templates* folder, you will find sample data, a BACPAC file to restore sample data to an Azure SQL Database. You will also find a Power BI template, which you can use to explore different sports dashboard views. For more information, jump to *Step 3* below. 
+
+## How should you use the Open-Source SPP code? 
+
+If you're not a developer, then you may want to first explore the Power BI template that is located in the *templates* folder. To explore this, you need to have Power BI Desktop installed (or upload the template to a powerbi.com account). This is  by far the quickest and easiest way to get started with the assets we've published. 
+
+If you're more dev- or data-savvy, then you'll want to explore restoring the BACPAC file to an Azure SQL Datanbase or even jumping into coding.  
+
+So, you have three different ways in which you can explore and interact with the open-source elements: 
+
+* Just open and explore PowerBi reports. Low effort and friction to do this, and you can get up and running in a few minutes. 
+* Restore a hydrated DB to Azure, and begin to migrate the CSVs and explore the data. Medium effort with some database knowledge, and you can get up and running within an hour of work. You will need to understand databases and data concepts. (Review the steps below in the Getting Started Tutorial.)
+* Use the PowerShell script and ARM Template to deploy the code to your Azure subscription (or manually deploy it). Higher effort and requires some technical knowledge to do this. (Review the readme.md in the *armtemplate* folder.) 
+
+We will add additional elements to the open-source code over time, post blog posts and update this repo on a regular basis. 
+
 ## Getting Started Tutorial
-In this tutorial, we will explore how to fully utilize a range of Microsoft Azure services to standup a database using Azure SQL, createvisuals using PowerBI, and perform simple machine learning experiments using Azure Machine Learning. This tutorial will help you getfamiliar with the Sports Performance Platform, which is a Microsoft Garage Project. 
+In this tutorial, we will explore how to fully utilize a range of Microsoft Azure services to standup a database using Azure SQL, create visuals using PowerBI, and perform simple machine learning experiments using Azure Machine Learning. This tutorial will help you get familiar with the Sports Performance Platform (SPP), which is a Microsoft Garage Project. 
 
 The data that we will be using will explore concepts of external load, internal load, and readiness—we refer to this as athlete wellness and readiness. 
 
@@ -25,25 +55,25 @@ We start with the database that SPP uses for its APIs. Our APIs serve multiple p
 
 ### Pre-requisite Software
 
-#### Step 1
+#### Step 1 - Set up an Azure Subscription
 
-To use the Sports Performance PLatform, you need to firsthave an Azure subscription. It's easy to create a subscription. You just needto go to the Azure portal and using your Microsoft Account (e.g. youremailname@hotmail.com, youremailname@outlook.com, etc.) and sign up for an account.  You can create a free account by starting from here: https://azure.microsoft.com/en-us/free/. 
+To use the Sports Performance Platform, you need to first have an Azure subscription. It's easy to create a subscription. You just needto go to the Azure portal and using your Microsoft Account (e.g. youremailname@hotmail.com, youremailname@outlook.com, etc.) and sign up for an account.  You can create a free account by starting from here: https://azure.microsoft.com/en-us/free/. 
 
-The open-source deployment of the Sports Performance Platform requires that you deploy the code into your Azure subscription, so youneed to do this first.
+The open-source deployment of the Sports Performance Platform requires that you deploy the code into your Azure subscription, so you need to do this first.
 
 You can check out the Azure services and offerings by going to www.microsoft.com/azure. 
 
-#### Step 2
+#### Step 2 - Install SQL Server Management Studio
 
 With your Azure subscription up and running, you also need to download and install SQL Server Management Studio (SSMS). This is a freetool that allows you to interact directly with your SQL Database. To install SSMS, go here:https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms. Click the Download SQL Server Management Studio 17.01 link, and select Run when prompted. 
 
-#### Step 3
+#### Step 3 - Install Power BI
 
 Because the Sports Performance Platform relies on Power BI as the reporting front-end, you also need to install Power BI Desktop. To dothis, go here: https://powerbi.microsoft.com/en-us/. Under Products, click Power BI Desktop and then Download. Click Run when prompted. 
 
 Currently, you can only install the desktop version on your Windows machine. However, there is a very rich browser experience, so you can sign in and create reports from powerbi.com from both your Windows and Mac machines. 
 
-#### Step 4
+#### Step 4 - Restoring Azure SQL Database
 
 While this is for more advanced users, you will at some point want to begin to explore machine learning. You can do this through theAzure Machine Learning (ML) Studio: https://studio.azureml.net/. Click the Sign Up button to get started and follow the instructions. 
 
@@ -93,19 +123,20 @@ At the end, you should have 7 new external tables that weren’t a part of the o
 
 ### Building Power BI Reports
 
-Now that we have the 7 tables that we will use in our PowerBI report, we can build the PowerBI report to understand the SeattleReign’s wellness and readiness. To build the reports from scratch will require extensive knowledge in Power Query—PowerBI’s tool for reading-in data from data stores like Azure SQL databases. 
+Now that we have the 7 tables that we will use in our PowerBI report, we can build the PowerBI report to understand the Seattle Reign’s wellness and readiness. To build the reports from scratch will require extensive knowledge in Power Query—PowerBI’s tool for reading-in data from data stores like Azure SQL databases. 
 
 If you would like to build the PowerBI report from scratch, you can always reverse engineer the PowerBI file that was provided to you in GitHub.
 
 For now, we take the following steps:
-* Open “Partner Showcase.pbix” once you have PowerBI Desktop installed on your machine. 
+
+* Open “SPP_Template.pbix” once you have PowerBI Desktop installed on your machine. 
 * You will click on Edit Queries.
 * You will open up the Power Query editor window.
 
 Here, there are few things to understand from this window:
 
 * Click on View to find the Advanced Editor tab
-* Advanced Editor tab that we will use in the next step. This contains all the loaded data that we have importedfrom SQL or built from scratch
+* Advanced Editor tab that we will use in the next step. This contains all the loaded data that we have imported from SQL or built from scratch
 * The Query Settings pane contains all the modifications we have made to the base table found within the SQL database
 * The main window is a preview of the data. 
 
@@ -120,20 +151,21 @@ Note: You may get an error in the columns “TotalDuration” and “Time90HRMax
 
 ### Unpacking a PowerBI Visual
 
-Now that you have your customized PowerBI file outfitted with tables from your database, the last thing to learn is how to reverse engineer a visual. Let’s take the visual below that we find from the Training page of ourreport:
+Now that you have your customized PowerBI file outfitted with tables from your database, the last thing to learn is how to reverse engineer a visual. Let’s take the visual below that we find from the Training page of our report:
 
 We find some core elements to this visual. It contains data points from one of our tables.
-The first thing we point our attention to is the Visualization pane (1, from the image below). This lets us choose which visualizationwe want to use to represent the data. Second, we select the specific metrics wewant from the Fields pane and we drag and drop it to each of the meta-data about the visual.
+
+The first thing we point our attention to is the Visualization pane. This lets us choose which visualizationwe want to use to represent the data. Second, we select the specific metrics wewant from the Fields pane and we drag and drop it to each of the meta-data about the visual.
 
 In our case, Details == Player, Legend == Position, and the X/Y axes are governed by Max Velocity and Total Distance.  It contains color formatting for each data point as well as a data label. Forwards are labeled as red, full backs are yellow, and so on. This is defined by the Formatting pane, shown by the red box in the image below. Here, you can set any formatting guidelines. The downward triangleslet you expand upon the formatting feature to dive deeper into the specific format. In our case, we would click on “Data colors” to change the colors of each position. Another example is “Category la..”, short for “Category Labels”, is how we get the player name to show up underneath the scatter plot data point. 
 
 It contains 2 dashed, light-blue lines. Here, our red boxsignifies the Advanced Analytics pane. This is only available for certainvisuals, so you will have to reverse engineer other visuals in this report tolearn which visuals support this functionality. In our case, it lets us set benchmarks that allow us to divide the scatter plot into quadrants. 
 
-If you check for these elements as you review the PowerBI file, you will get a sense of how to start creating your own. The 2nd pageof the report—Explanation of Reports—outlines the motivation behind each page. Understanding how to read a visual for its components and formatting will bring you further along the journey of building your own robust reports. 
+If you check for these elements as you review the PowerBI file, you will get a sense of how to start creating your own. The 2nd page of the report—Explanation of Reports—outlines the motivation behind each page. Understanding how to read a visual for its components and formatting will bring you further along the journey of building your own robust reports. 
 
 ## Conclusion
 
-We hope that this blog post serves as a way to get started with understanding how to import data into cloud storage and use the data with PowerBI to build reports and find visual signals. The Sports Performance Platform, incubated from the Microsoft Garage, is the first step in building a scalable solution to your sports analytics. To learn more, please visit this survey. 
+We hope that this readme serves as a way to get started with understanding how to import data into cloud storage and use the data with PowerBI to build reports and find visual signals. The Sports Performance Platform, incubated from the Microsoft Garage, is the first step in building a scalable solution to your sports analytics. To learn more, please visit this survey. 
  
  
  
