@@ -1,4 +1,6 @@
-# TPP Deployment Guide
+# Sports Performance Platform Deployment Guide
+
+Note: You will see "TPP" in the notes and in the code namespaces/code-files. This is because the code-name for our project (before we went through official branding) was team and player performance--so TPP. 
 
 This guide will walk you the process of deploying the TPP infrastructure into an Azure subscription.
 
