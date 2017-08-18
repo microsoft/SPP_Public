@@ -1,0 +1,726 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TPP.Api</name>
+    </assembly>
+    <members>
+        <member name="M:TPP.Api.Controllers.V2.AuthController.AuthenticateUser(System.String)">
+            <summary>
+            Authenticates the user against SQL Database Users table using its Azure AD Object Id
+            </summary>
+            <param name="aadId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.AuthController.Get(System.Int32)">
+            <summary>
+            Retrieves the user entity by its User Id
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.AuthController.CreateUser(TPP.Core.Services.Models.UserDto)">
+            <summary>
+            Creates a new user
+            </summary>
+            <param name="userDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.AuthController.UpdateUser(TPP.Core.Services.Models.UserDto)">
+            <summary>
+            Updates the existing user
+            </summary>
+            <param name="userDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.AuthController.DeleteUser(TPP.Core.Services.Models.UserDto)">
+            <summary>
+            Delete the user with the specified UserId
+            </summary>
+            <param name="user"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.AuthController.GetToken(TPP.Core.Services.Models.AppCredentialsDTO)">
+            <summary>
+            Authorizes the client app to access these APIs and return the authentication OAuth token
+            </summary>
+            <param name="appCredentials"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.MessageController.Get(System.Int32)">
+            <summary>
+            Retrieves the message content by its Id
+            </summary>
+            <param name="messageId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.MessageController.GetMessages(System.Int32)">
+            <summary>
+            Retrieves all messages for the current player
+            </summary>
+            <param name="playerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.MessageController.AddMessage(TPP.Core.Services.Models.MessageDto)">
+            <summary>
+            Adds a new message to the database
+            </summary>
+            <param name="messageDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.MessageController.UpdateMessage(TPP.Core.Services.Models.MessageDto)">
+            <summary>
+            Updates the existing message
+            </summary>
+            <param name="messageDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.MessageController.DeleteMessage(System.Int32)">
+            <summary>
+            Deletes the message with the specified Id
+            </summary>
+            <param name="messageId"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.MessageController.DeletePlayerMessages(System.Int32)">
+            <summary>
+            Deletes all messages for the current player
+            </summary>
+            <param name="playerId"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.PlayerResponseController.SaveResponse(TPP.Core.Services.Models.PlayerResponseDto)">
+            <summary>
+            Stores the player's response to the Questionnaire into the Database
+            </summary>
+            <param name="playerResponseDto"></param>
+            <returns>Newly created response</returns>
+            <response code="201">Returns the newly created PlayerResponseDto object</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.PlayerResponseController.CreatePlayerResponse(TPP.Core.Services.Models.PlayerResponseDto)">
+            <summary>
+            Adds a new player's response
+            </summary>
+            <param name="playerResponseDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.PlayerResponseController.Get(TPP.Core.Services.Models.PlayerResponseDto)">
+            <summary>
+            Retrieves the player's responses by the Player Id and Questionnaire Id
+            </summary>
+            <param name="playerResponseDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.PlayerResponseController.Get(System.Int32,System.Int32)">
+            <summary>
+            Retrieves the player's responses by the Player Id and Questionnaire Id
+            </summary>
+            <param name="playerId"></param>
+            <param name="questionnaireId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.PlayerResponseController.UpdatePlayerResponse(TPP.Core.Services.Models.PlayerResponseDto)">
+            <summary>
+            Updates the existing response
+            </summary>
+            <param name="playerResponseDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.PlayerResponseController.DeletePlayerResponse(System.Int32)">
+            <summary>
+            Deletes the response with the specified Id
+            </summary>
+            <param name="playerResponseId"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.PracticeController.GetAllPractices">
+            <summary>
+            Retrieves all practices
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.PracticeController.GetSessionPractices(System.Int32)">
+            <summary>
+            Retrieves the list of practices for the current session Id
+            </summary>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.PracticeController.GetPracticeDrills(System.Int32)">
+            <summary>
+            Retrieves all practice drills for the given practice
+            </summary>
+            <param name="practiceId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.PracticeController.GetAllDrills">
+            <summary>
+            Retrieves all practice drills
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.PracticeController.Get(System.Int32)">
+            <summary>
+            Retrieves the practice by its Id
+            </summary>
+            <param name="practiceId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.PracticeController.CreatePractice(TPP.Core.Services.Models.PracticeDto)">
+            <summary>
+            Adds a new practice to the Db
+            </summary>
+            <param name="practiceDto"></param>
+            <param name="note"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.PracticeController.UpdatePractice(TPP.Core.Services.Models.PracticeDto)">
+            <summary>
+            Updates the existing practice
+            </summary>
+            <param name="practiceDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.PracticeController.DeletePractice(System.Int32)">
+            <summary>
+            Delete the practice with the specified Id
+            </summary>
+            <param name="practiceId"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.QuestionnaireController.GetQuestionnaire(System.Int32)">
+            <summary>
+            Get the questioonnaire for the current session
+            </summary>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.QuestionnaireController.GetSessionQuestionnaires(System.Int32)">
+            <summary>
+            Get the list of questionnaires for the current session
+            </summary>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.QuestionnaireController.Get(System.Int32)">
+            <summary>
+            Retrieves questionnaire entity by its Id
+            </summary>
+            <param name="questionnaireId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.QuestionnaireController.GetQuestionResponse(System.Int32,System.Int32)">
+            <summary>
+            Retrieves question's response for the given session and player IDs
+            </summary>
+            <param name="sessionId"></param>
+            <param name="playerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.QuestionnaireController.CreateQuestionnaire(TPP.Core.Services.Models.AthleteQuestionnaireDto)">
+            <summary>
+            Creates a new questionnaire
+            </summary>
+            <param name="questionnaireDto"></param>
+            <returns>Newly created questionnaireDto</returns>
+            <response code="201">Returns the number of created records in the database</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.QuestionnaireController.UpdateQuestionnaire(TPP.Core.Services.Models.AthleteQuestionnaireDto)">
+            <summary>
+            Updates the existing questionnaire
+            </summary>
+            <param name="questionnaireDto"></param>
+            <returns>Newly created questionnaireDto</returns>
+            <response code="201">Returns the number of updated records</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.QuestionnaireController.RemoveQuestionnaire(System.Int32)">
+            <summary>
+            Deletes a questionnaire with the specified Id
+            </summary>
+            <param name="questionnaireId"></param>
+            <returns>Newly created questionnaireDto</returns>
+            <response code="201">Returns the number of updated records</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.SessionController.Get(System.DateTime)">
+            <summary>
+            Retrieves the session for the specified date
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.SessionController.Get(System.DateTime,System.DateTime)">
+            <summary>
+            Retrieves the list of sessions within the specified dates range
+            </summary>
+            <param name="from"></param>
+            <param name="to"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.SessionController.CreateSession(TPP.Core.Services.Models.SessionDto)">
+            <summary>
+            Creates a new session
+            </summary>
+            <param name="sessionDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.SessionController.Get(System.Int32)">
+            <summary>
+            Retrieves the session by its Id
+            </summary>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.SessionController.UpdateSession(TPP.Core.Services.Models.SessionDto)">
+            <summary>
+            Updates the existing session
+            </summary>
+            <param name="sessionDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.SessionController.DeleteSession(System.Int32)">
+            <summary>
+            Deletes the session with the specified Id
+            </summary>
+            <param name="sessionId"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.SessionController.AddUserToSession(TPP.Core.Services.Models.SessionDto)">
+            <summary>
+            Add collection of users to the specific session
+            </summary>
+            <param name="sessionDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V2.SessionController.RemoveUserFromSession(TPP.Core.Services.Models.SessionDto)">
+            <summary>
+            Add collection of users to the specific session
+            </summary>
+            <param name="sessionDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.CognitiveServicesController.GetCSKeysForTeam(System.Int32)">
+            <summary>
+            Gets the Cognitive Services API Keys for the current team
+            </summary>
+            <param name="teamId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.CognitiveServicesController.CreateCognitiveServiceKeys(TPP.Core.Services.Models.CognitiveServiceKeysDto)">
+            <summary>
+            Stores new Cognitive Services API Keys into the Database
+            </summary>
+            <param name="csKeysDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.CognitiveServicesController.UpdateCognitiveServiceKeys(TPP.Core.Services.Models.CognitiveServiceKeysDto)">
+            <summary>
+            Updates the existing Cognitive Services Keys
+            </summary>
+            <param name="csKeysDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.CognitiveServicesController.AuthenticateUserByFace(System.Collections.Generic.IList{TPP.Core.Services.Models.UserIdentityDto})">
+            <summary>
+            Authenticates user using the face recognition
+            </summary>
+            <param name="userIdentities"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.CognitiveServicesController.DeleteCognitiveServicesKeys(System.Int32)">
+            <summary>
+            Deletes the Cognitive Services API Keys with the specified Id
+            </summary>
+            <param name="csId"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.DrillController.GetAllDrills">
+            <summary>
+            Retrieves all drills
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.SettingsController.GetPlayerPositions">
+            <summary>
+            Returns the player positions.
+            </summary>
+            <returns></returns>s
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.SettingsController.CreatePlayerPosition(TPP.Core.Services.Models.PlayerPositionDto)">
+            <summary>
+            Creates a new player position
+            </summary>
+            <param name="playerPositionDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.SettingsController.UpdatePlayerPosition(TPP.Core.Services.Models.PlayerPositionDto)">
+            <summary>
+            Updates the existing player position
+            </summary>
+            <param name="playerPositionDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.SettingsController.DeletePlayerPosition(System.Int32)">
+            <summary>
+            Deletes the player position using the specified  Id
+            </summary>
+            <param name="positionId"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.SettingsController.GetSubPositions">
+            <summary>
+            Returns the sub positions.
+            </summary>
+            <returns></returns>s
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.SettingsController.CreateSubPosition(TPP.Core.Services.Models.SubPositionDto)">
+            <summary>
+            Creates a new sub position
+            </summary>
+            <param name="subPositionDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.SettingsController.UpdateSubPosition(TPP.Core.Services.Models.SubPositionDto)">
+            <summary>
+            Updates the existing sub position
+            </summary>
+            <param name="subPositionDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.SettingsController.DeleteSubPosition(System.Int32)">
+            <summary>
+            Deletes the sub position using the specified  Id
+            </summary>
+            <param name="subpositionId"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.SettingsController.GetMesocycles">
+            <summary>
+            Returns the Mesocycles.
+            </summary>
+            <returns></returns>s
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.SettingsController.CreateMesocycle(TPP.Core.Services.Models.MesocycleDto)">
+            <summary>
+            Creates a new mesocycleDto
+            </summary>
+            <param name="mesocycleDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.SettingsController.UpdateMesocycle(TPP.Core.Services.Models.MesocycleDto)">
+            <summary>
+            Updates the existing mesocycle
+            </summary>
+            <param name="mesocycleDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.SettingsController.DeleteMesocycle(System.Int32)">
+            <summary>
+            Deletes the mesocycle using the specified  Id
+            </summary>
+            <param name="mesocycleId"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.SettingsController.GetImages">
+            <summary>
+            Returns the Images.
+            </summary>
+            <returns></returns>s
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.SettingsController.CreateImage(TPP.Core.Services.Models.ImageDto)">
+            <summary>
+            Creates a new image
+            </summary>
+            <param name="imageDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.SettingsController.UpdateImage(TPP.Core.Services.Models.ImageDto)">
+            <summary>
+            Updates the existing image
+            </summary>
+            <param name="imageDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.SettingsController.DeleteImage(System.Int32)">
+            <summary>
+            Deletes the image using the specified  Id
+            </summary>
+            <param name="imageId"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.SettingsController.GetMicrocycles">
+            <summary>
+            Returns the microcycles.
+            </summary>
+            <returns></returns>s
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.SettingsController.CreateMicrocycle(TPP.Core.Services.Models.MicrocycleDto)">
+            <summary>
+            Creates a new microcycle
+            </summary>
+            <param name="microcycleDTO"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.SettingsController.UpdateSubPosition(TPP.Core.Services.Models.MicrocycleDto)">
+            <summary>
+            Updates the existing Microcycle
+            </summary>
+            <param name="microcycleDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.SettingsController.DeleteMicrocycle(System.Int32)">
+            <summary>
+            Deletes the microcycle using the specified  Id
+            </summary>
+            <param name="microsycleId"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.SettingsController.AddSessionUser(TPP.Core.Services.Models.SessionUserDto)">
+            <summary>
+            Creates a new SessionUser
+            </summary>
+            <param name="sessionUserDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.TeamController.GetAllTeams">
+            <summary>
+            Returns all teams
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.TeamController.Get(System.Int32)">
+            <summary>
+            Returns the team for the specified Team Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.TeamController.GetTeamByName(System.String)">
+            <summary>
+            Returns the team by the specified Team Name
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.TeamController.GetDomesticPlayers(System.Int32)">
+            <summary>
+            Returns the domestic players for the specified Team Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.TeamController.GetTeamReadiness(System.Int32)">
+            <summary>
+            Retrieves Team Readiness data for the last 6 months and the current month for the given Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.TeamController.GetNextTeamMatchInfo(System.Int32)">
+            <summary>
+            Retrieves information about the next match for the specified Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.TeamController.GetMatchHistoryInfo(System.Int32)">
+            <summary>
+            Retrieves information about the all team matches for the specified team
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.TeamController.GetPlayerReadiness(System.Int32)">
+            <summary>
+            Retrieves the information about readiness stats of all player for the specified Team Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.TeamController.GetTeamImages(System.Int32)">
+            <summary>
+            Retrieves Team Images used in the gallery carousel
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.TeamController.AddTeamImages(TPP.Core.Services.Models.TeamImagesDto)">
+            <summary>
+            Adds the list of images to the team
+            </summary>
+            <param name="teamImages"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.TeamController.CreateTeam(TPP.Core.Services.Models.TeamDto)">
+            <summary>
+            Creates a new team
+            </summary>
+            <param name="teamDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.TeamController.UpdateTeam(TPP.Core.Services.Models.TeamDto)">
+            <summary>
+            Updates the existing team
+            </summary>
+            <param name="teamDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.TeamController.DeleteTeam(System.Int32)">
+            <summary>
+            Deletes the team using the specified Team Id
+            </summary>
+            <param name="teamId"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.WorkoutController.GetWorkouts">
+            <summary>
+            Retrieves all workouts
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.WorkoutController.GetSessionWorkout(System.Int32)">
+            <summary>
+            Retrieves the session workout for the specified session Id
+            </summary>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.WorkoutController.GetAllExercises">
+            <summary>
+            Retrieves all exercises
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.WorkoutController.CreateAthleteWorkout(TPP.Core.Services.Models.AthleteWorkoutDto)">
+            <summary>
+            Creates a new athlete workout
+            </summary>
+            <param name="workoutDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.WorkoutController.UpdateAthleteWorkout(TPP.Core.Services.Models.AthleteWorkoutDto)">
+            <summary>
+            Updates the existing workout
+            </summary>
+            <param name="workoutDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.WorkoutController.UpdateAthleteWorkoutExercise(TPP.Core.Services.Models.AthleteWorkoutDto)">
+            <summary>
+            Updates the existing workout exercises
+            </summary>
+            <param name="workoutDto"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.WorkoutController.DeleteAthleteWorkout(System.Int32)">
+            <summary>
+            Deletes the workout for the specified Id
+            </summary>
+            <param name="workoutId"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+        <member name="M:TPP.Api.Controllers.V3.WorkoutController.DeleteAllSessionWorkouts(System.Int32)">
+            <summary>
+            Delete all workouts for the specified session Id
+            </summary>
+            <param name="sessionId"></param>
+            <returns>true, if successfull; otherwise - false</returns>
+            <response code="201">true, if successfull; otherwise - false</response>
+            <response code="400">If the object is null</response>
+        </member>
+    </members>
+</doc>

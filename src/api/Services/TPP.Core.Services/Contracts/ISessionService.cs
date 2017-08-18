@@ -12,6 +12,7 @@ namespace TPP.Core.Services.Contracts
     {
         Task<List<SessionDto>> GetSessionsByDate(DateTime sessionDate);
         Task<List<SessionDto>> GetSessionsRange(DateTime fromDate, DateTime toDate);
+        Task<List<SessionTypeDto>> GetSessionTypes();
 
         Task<int> CreateSession(SessionDto sessionDto);
 
@@ -26,7 +27,7 @@ namespace TPP.Core.Services.Contracts
 
         Task AddUserToSession(int sessionId, int userId);
 
-        Task RemoveUserFromSession(int sessionId, int userId);
+        Task RemoveUsersFromSession(int sessionId);
 
     }
 }

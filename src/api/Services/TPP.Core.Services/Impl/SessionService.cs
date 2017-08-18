@@ -42,6 +42,7 @@ namespace TPP.Core.Services.Impl
                 .ForMember(dest => dest.Scheduled, opt => opt.MapFrom(src => src.StartTime))
                 ;
 
+            CreateMap<SessionType, SessionTypeDto>();
 
         }
     }
@@ -147,6 +148,12 @@ namespace TPP.Core.Services.Impl
 
         }
 
+        public async Task<List<SessionTypeDto>> GetSessionTypes()
+        {
+            var dbRecs = await _db.FindAsync<SessionType>();
+            return dbRecs.Select(rec =>
+                Mapper.Map<SessionTypeDto>(rec)).ToList();
+        }
 
         public async Task<bool> CreateSessionUser(SessionUserDto sessionUserDto)
         {
@@ -180,7 +187,15 @@ namespace TPP.Core.Services.Impl
             var newRec = Mapper.Map<Session>(sessionDto);
 
             //Update the database
-            return await _db.UpdateAsync(newRec);
+            newRec.LocationId = sessionDto.Location.Id;
+            var result = await _db.UpdateAsync(newRec);
+            var currentSession = await GetSession(sessionDto.Id);
+            await RemoveUsersFromSession(currentSession.Id);
+            foreach (var user in sessionDto.Users)
+            {
+                await AddUserToSession(sessionDto.Id, user.Id);
+            }
+            return result;
         }
 
         public async Task<bool> DeleteSession(int sessionId)
@@ -194,9 +209,26 @@ namespace TPP.Core.Services.Impl
         public async Task<SessionDto> GetSession(int sessionId)
         {
             //Get the questionnaire by its Id
-            var dbRec = await _db.GetAsync(new Session() { Id = sessionId });
+            var sessions = await _db.FindAsync<SessionUser>(query => query
+                .Include<Session>(join => join.InnerJoin()
+                    .Where($"{nameof(Session.Id):C} = @sessionId"))
+                .Include<Location>(join => join.InnerJoin())
+                .Include<User>(join => join.InnerJoin())
+                .WithParameters(new { sessionId }));
 
-            return Mapper.Map<SessionDto>(dbRec);
+            var sessionDb = sessions?.ToList();
+            if (sessionDb == null || !sessionDb.Any()) return null;
+            var session = Mapper.Map<SessionDto>(sessionDb.First().Session);
+            session.Users = new List<UserDto>();
+            foreach (var sessionUser in sessionDb)
+            {
+                if ((bool) sessionUser.User?.isActive && (bool) sessionUser.User?.isEnabled)
+                {
+                    var user = Mapper.Map<UserDto>(sessionUser.User);
+                    ((List<UserDto>)session.Users).Add(user);
+                }
+            }
+            return session;
         }
 
         public async Task AddUserToSession(int sessionId, int userId)
@@ -210,16 +242,12 @@ namespace TPP.Core.Services.Impl
             await _db.InsertAsync(sessionUser);
         }
 
-        public async Task RemoveUserFromSession(int sessionId, int userId)
+        public async Task RemoveUsersFromSession(int sessionId)
         {
             //Get the questionnaire by its Id
-            var dbRec = await _db.GetAsync(new SessionUser()
-            {
-                SessionId = sessionId,
-                UserId = userId
-            });
-
-            if(dbRec != null) await _db.DeleteAsync(dbRec);
+            await _db.BulkDeleteAsync<SessionUser>(query => query
+                .Where($"{nameof(SessionUser.SessionId):C} = @sessionId")
+                .WithParameters(new { sessionId }));
         }
     }
 }

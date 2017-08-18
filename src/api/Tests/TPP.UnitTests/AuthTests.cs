@@ -113,7 +113,7 @@ namespace TPP.UnitTests
 
             //Create the session service
             var sessionSvc = new SessionService(this._fixture.Context);
-            await sessionSvc.RemoveUserFromSession(1, userId);
+            await sessionSvc.RemoveUsersFromSession(1);
 
         }
 

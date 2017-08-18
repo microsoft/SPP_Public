@@ -1,0 +1,147 @@
+2017-08-18 12:39:42.817 -04:00 [Debug] Hosting starting
+2017-08-18 12:39:43.089 -04:00 [Debug] Connection id ""0HL76AUT78AH0"" started.
+2017-08-18 12:39:43.104 -04:00 [Debug] Hosting started
+2017-08-18 12:39:43.197 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:44379/swagger  
+2017-08-18 12:39:43.522 -04:00 [Debug] Request did not match any routes.
+2017-08-18 12:39:43.591 -04:00 [Debug] Connection id ""0HL76AUT78AH0"" completed keep alive response.
+2017-08-18 12:39:43.599 -04:00 [Information] Request finished in 420.3541ms 301 
+2017-08-18 12:39:43.653 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:44379/swagger/  
+2017-08-18 12:39:43.655 -04:00 [Debug] Request did not match any routes.
+2017-08-18 12:39:43.678 -04:00 [Information] Sending file. Request path: '"/index.html"'. Physical path: '"N/A"'
+2017-08-18 12:39:43.703 -04:00 [Debug] Connection id ""0HL76AUT78AH0"" completed keep alive response.
+2017-08-18 12:39:43.703 -04:00 [Information] Request finished in 49.4288ms 200 text/html
+2017-08-18 12:39:43.716 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:44379/swagger/css/typography.css  
+2017-08-18 12:39:43.716 -04:00 [Debug] Request did not match any routes.
+2017-08-18 12:39:43.717 -04:00 [Debug] Connection id ""0HL76AUT78AH1"" started.
+2017-08-18 12:39:43.717 -04:00 [Debug] Connection id ""0HL76AUT78AH2"" started.
+2017-08-18 12:39:43.717 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:44379/swagger/css/screen.css  
+2017-08-18 12:39:43.717 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:44379/swagger/css/reset.css  
+2017-08-18 12:39:43.717 -04:00 [Debug] Request did not match any routes.
+2017-08-18 12:39:43.717 -04:00 [Debug] Request did not match any routes.
+2017-08-18 12:39:43.718 -04:00 [Debug] Connection id ""0HL76AUT78AH3"" started.
+2017-08-18 12:39:43.718 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:44379/swagger/css/print.css  
+2017-08-18 12:39:43.718 -04:00 [Debug] Request did not match any routes.
+2017-08-18 12:39:43.718 -04:00 [Debug] Connection id ""0HL76AUT78AH4"" started.
+2017-08-18 12:39:43.719 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:44379/swagger/lib/object-assign-pollyfill.js  
+2017-08-18 12:39:43.719 -04:00 [Debug] Request did not match any routes.
+2017-08-18 12:39:43.719 -04:00 [Debug] Connection id ""0HL76AUT78AH5"" started.
+2017-08-18 12:39:43.720 -04:00 [Debug] Connection id ""0HL76AUT78AH6"" started.
+2017-08-18 12:39:43.720 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:44379/swagger/lib/jquery-1.8.0.min.js  
+2017-08-18 12:39:43.720 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:44379/swagger/lib/jquery.slideto.min.js  
+2017-08-18 12:39:43.720 -04:00 [Debug] Request did not match any routes.
+2017-08-18 12:39:43.720 -04:00 [Debug] Request did not match any routes.
+2017-08-18 12:39:43.720 -04:00 [Debug] Connection id ""0HL76AUT78AH7"" started.
+2017-08-18 12:39:43.720 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:44379/swagger/lib/jquery.wiggle.min.js  
+2017-08-18 12:39:43.721 -04:00 [Debug] Request did not match any routes.
+2017-08-18 12:39:43.721 -04:00 [Debug] Connection id ""0HL76AUT78AH8"" started.
+2017-08-18 12:39:43.721 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:44379/swagger/lib/jquery.ba-bbq.min.js  
+2017-08-18 12:39:43.721 -04:00 [Debug] Request did not match any routes.
+2017-08-18 12:39:43.721 -04:00 [Debug] Connection id ""0HL76AUT78AH9"" started.
+2017-08-18 12:39:43.722 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:44379/swagger/lib/handlebars-4.0.5.js  
+2017-08-18 12:39:43.722 -04:00 [Debug] Request did not match any routes.
+2017-08-18 12:39:43.725 -04:00 [Debug] Connection id ""0HL76AUT78AHA"" started.
+2017-08-18 12:39:43.726 -04:00 [Debug] Connection id ""0HL76AUT78AHB"" started.
+2017-08-18 12:39:43.726 -04:00 [Debug] Connection id ""0HL76AUT78AHC"" started.
+2017-08-18 12:39:43.726 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:44379/swagger/lib/backbone-min.js  
+2017-08-18 12:39:43.726 -04:00 [Information] The file "/css/print.css" was not modified
+2017-08-18 12:39:43.726 -04:00 [Information] The file "/css/screen.css" was not modified
+2017-08-18 12:39:43.726 -04:00 [Information] The file "/lib/jquery.wiggle.min.js" was not modified
+2017-08-18 12:39:43.726 -04:00 [Information] The file "/lib/jquery.slideto.min.js" was not modified
+2017-08-18 12:39:43.726 -04:00 [Information] The file "/lib/object-assign-pollyfill.js" was not modified
+2017-08-18 12:39:43.726 -04:00 [Information] The file "/lib/jquery-1.8.0.min.js" was not modified
+2017-08-18 12:39:43.726 -04:00 [Information] The file "/lib/handlebars-4.0.5.js" was not modified
+2017-08-18 12:39:43.726 -04:00 [Information] The file "/css/reset.css" was not modified
+2017-08-18 12:39:43.726 -04:00 [Information] The file "/lib/jquery.ba-bbq.min.js" was not modified
+2017-08-18 12:39:43.728 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:44379/swagger/lib/lodash.min.js  
+2017-08-18 12:39:43.727 -04:00 [Information] The file "/css/typography.css" was not modified
+2017-08-18 12:39:43.728 -04:00 [Debug] Request did not match any routes.
+2017-08-18 12:39:43.728 -04:00 [Debug] Request did not match any routes.
+2017-08-18 12:39:43.729 -04:00 [Debug] Connection id ""0HL76AUT78AHE"" started.
+2017-08-18 12:39:43.729 -04:00 [Information] The file "/lib/lodash.min.js" was not modified
+2017-08-18 12:39:43.729 -04:00 [Debug] Connection id ""0HL76AUT78AHF"" started.
+2017-08-18 12:39:43.729 -04:00 [Debug] Connection id ""0HL76AUT78AHG"" started.
+2017-08-18 12:39:43.729 -04:00 [Information] The file "/lib/backbone-min.js" was not modified
+2017-08-18 12:39:43.729 -04:00 [Debug] Connection id ""0HL76AUT78AHD"" started.
+2017-08-18 12:39:43.731 -04:00 [Debug] Connection id ""0HL76AUT78AHH"" started.
+2017-08-18 12:39:43.731 -04:00 [Debug] Connection id ""0HL76AUT78AHI"" started.
+2017-08-18 12:39:43.732 -04:00 [Debug] Handled. Status code: 304 File: "/css/screen.css"
+2017-08-18 12:39:43.732 -04:00 [Debug] Handled. Status code: 304 File: "/css/print.css"
+2017-08-18 12:39:43.732 -04:00 [Debug] Connection id ""0HL76AUT78AH2"" completed keep alive response.
+2017-08-18 12:39:43.732 -04:00 [Debug] Connection id ""0HL76AUT78AH3"" completed keep alive response.
+2017-08-18 12:39:43.732 -04:00 [Information] Request finished in 15.3744ms 304 text/css
+2017-08-18 12:39:43.732 -04:00 [Information] Request finished in 14.5246ms 304 text/css
+2017-08-18 12:39:43.732 -04:00 [Debug] Handled. Status code: 304 File: "/lib/handlebars-4.0.5.js"
+2017-08-18 12:39:43.732 -04:00 [Debug] Handled. Status code: 304 File: "/lib/jquery.wiggle.min.js"
+2017-08-18 12:39:43.733 -04:00 [Debug] Connection id ""0HL76AUT78AH7"" completed keep alive response.
+2017-08-18 12:39:43.733 -04:00 [Information] Request finished in 12.8275ms 304 application/javascript
+2017-08-18 12:39:43.732 -04:00 [Debug] Connection id ""0HL76AUT78AH9"" completed keep alive response.
+2017-08-18 12:39:43.733 -04:00 [Information] Request finished in 11.7745ms 304 application/javascript
+2017-08-18 12:39:43.733 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:44379/swagger/lib/marked.js  
+2017-08-18 12:39:43.733 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:44379/swagger/lib/highlight.9.1.0.pack_extended.js  
+2017-08-18 12:39:43.733 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:44379/swagger/swagger-ui.min.js  
+2017-08-18 12:39:43.734 -04:00 [Debug] Request did not match any routes.
+2017-08-18 12:39:43.734 -04:00 [Debug] Request did not match any routes.
+2017-08-18 12:39:43.734 -04:00 [Debug] Request did not match any routes.
+2017-08-18 12:39:43.734 -04:00 [Information] The file "/lib/highlight.9.1.0.pack_extended.js" was not modified
+2017-08-18 12:39:43.734 -04:00 [Debug] Handled. Status code: 304 File: "/lib/highlight.9.1.0.pack_extended.js"
+2017-08-18 12:39:43.734 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:44379/swagger/lib/highlight.9.1.0.pack.js  
+2017-08-18 12:39:43.734 -04:00 [Debug] Handled. Status code: 304 File: "/css/reset.css"
+2017-08-18 12:39:43.734 -04:00 [Information] The file "/swagger-ui.min.js" was not modified
+2017-08-18 12:39:43.734 -04:00 [Debug] Connection id ""0HL76AUT78AH1"" completed keep alive response.
+2017-08-18 12:39:43.734 -04:00 [Debug] Handled. Status code: 304 File: "/swagger-ui.min.js"
+2017-08-18 12:39:43.734 -04:00 [Information] Request finished in 17.3046ms 304 text/css
+2017-08-18 12:39:43.734 -04:00 [Debug] Connection id ""0HL76AUT78AHA"" completed keep alive response.
+2017-08-18 12:39:43.734 -04:00 [Information] Request finished in 1.6941ms 304 application/javascript
+2017-08-18 12:39:43.734 -04:00 [Debug] Handled. Status code: 304 File: "/css/typography.css"
+2017-08-18 12:39:43.735 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:44379/swagger/lib/jsoneditor.min.js  
+2017-08-18 12:39:43.734 -04:00 [Debug] Connection id ""0HL76AUT78AHE"" completed keep alive response.
+2017-08-18 12:39:43.734 -04:00 [Debug] Handled. Status code: 304 File: "/lib/lodash.min.js"
+2017-08-18 12:39:43.735 -04:00 [Information] Request finished in 2.1586ms 304 application/javascript
+2017-08-18 12:39:43.734 -04:00 [Debug] Request did not match any routes.
+2017-08-18 12:39:43.735 -04:00 [Debug] Connection id ""0HL76AUT78AHB"" completed keep alive response.
+2017-08-18 12:39:43.734 -04:00 [Debug] Handled. Status code: 304 File: "/lib/backbone-min.js"
+2017-08-18 12:39:43.735 -04:00 [Debug] Connection id ""0HL76AUT78AHC"" completed keep alive response.
+2017-08-18 12:39:43.735 -04:00 [Information] The file "/lib/marked.js" was not modified
+2017-08-18 12:39:43.735 -04:00 [Information] Request finished in 8.8484ms 304 application/javascript
+2017-08-18 12:39:43.735 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:44379/swagger/lib/swagger-oauth.js  
+2017-08-18 12:39:43.735 -04:00 [Debug] Handled. Status code: 304 File: "/lib/jquery.ba-bbq.min.js"
+2017-08-18 12:39:43.735 -04:00 [Debug] Connection id ""0HL76AUT78AH0"" completed keep alive response.
+2017-08-18 12:39:43.735 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:44379/swagger/images/logo_small.png  
+2017-08-18 12:39:43.736 -04:00 [Information] Request finished in 19.3468ms 304 text/css
+2017-08-18 12:39:43.735 -04:00 [Debug] Request did not match any routes.
+2017-08-18 12:39:43.736 -04:00 [Debug] Request did not match any routes.
+2017-08-18 12:39:43.735 -04:00 [Information] Request finished in 7.6235ms 304 application/javascript
+2017-08-18 12:39:43.735 -04:00 [Debug] Handled. Status code: 304 File: "/lib/marked.js"
+2017-08-18 12:39:43.735 -04:00 [Debug] Request did not match any routes.
+2017-08-18 12:39:43.736 -04:00 [Debug] Connection id ""0HL76AUT78AHF"" completed keep alive response.
+2017-08-18 12:39:43.735 -04:00 [Debug] Connection id ""0HL76AUT78AH8"" completed keep alive response.
+2017-08-18 12:39:43.736 -04:00 [Information] Request finished in 2.8043ms 304 application/javascript
+2017-08-18 12:39:43.736 -04:00 [Information] Request finished in 15.4102ms 304 application/javascript
+2017-08-18 12:39:43.737 -04:00 [Information] Sending file. Request path: '"/images/logo_small.png"'. Physical path: '"N/A"'
+2017-08-18 12:39:43.737 -04:00 [Information] The file "/lib/highlight.9.1.0.pack.js" was not modified
+2017-08-18 12:39:43.737 -04:00 [Debug] Handled. Status code: 304 File: "/lib/highlight.9.1.0.pack.js"
+2017-08-18 12:39:43.737 -04:00 [Information] The file "/lib/swagger-oauth.js" was not modified
+2017-08-18 12:39:43.737 -04:00 [Debug] Connection id ""0HL76AUT78AHG"" completed keep alive response.
+2017-08-18 12:39:43.737 -04:00 [Debug] Handled. Status code: 304 File: "/lib/swagger-oauth.js"
+2017-08-18 12:39:43.737 -04:00 [Information] Request finished in 3.484ms 304 application/javascript
+2017-08-18 12:39:43.737 -04:00 [Debug] Connection id ""0HL76AUT78AHI"" completed keep alive response.
+2017-08-18 12:39:43.737 -04:00 [Information] Request finished in 1.943ms 304 application/javascript
+2017-08-18 12:39:43.737 -04:00 [Information] The file "/lib/jsoneditor.min.js" was not modified
+2017-08-18 12:39:43.738 -04:00 [Debug] Handled. Status code: 304 File: "/lib/jsoneditor.min.js"
+2017-08-18 12:39:43.738 -04:00 [Debug] Connection id ""0HL76AUT78AHH"" completed keep alive response.
+2017-08-18 12:39:43.738 -04:00 [Information] Request finished in 3.0014ms 200 image/png
+2017-08-18 12:39:43.738 -04:00 [Debug] Connection id ""0HL76AUT78AHD"" completed keep alive response.
+2017-08-18 12:39:43.738 -04:00 [Information] Request finished in 3.7858ms 304 application/javascript
+2017-08-18 12:39:43.732 -04:00 [Debug] Handled. Status code: 304 File: "/lib/jquery.slideto.min.js"
+2017-08-18 12:39:43.739 -04:00 [Debug] Connection id ""0HL76AUT78AH6"" completed keep alive response.
+2017-08-18 12:39:43.740 -04:00 [Information] Request finished in 19.6638ms 304 application/javascript
+2017-08-18 12:39:43.732 -04:00 [Debug] Handled. Status code: 304 File: "/lib/object-assign-pollyfill.js"
+2017-08-18 12:39:43.744 -04:00 [Debug] Connection id ""0HL76AUT78AH4"" completed keep alive response.
+2017-08-18 12:39:43.744 -04:00 [Information] Request finished in 25.5598ms 304 application/javascript
+2017-08-18 12:39:43.732 -04:00 [Debug] Handled. Status code: 304 File: "/lib/jquery-1.8.0.min.js"
+2017-08-18 12:39:43.748 -04:00 [Debug] Connection id ""0HL76AUT78AH5"" completed keep alive response.
+2017-08-18 12:39:43.748 -04:00 [Information] Request finished in 28.7941ms 304 application/javascript
+2017-08-18 12:39:43.927 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:44379/swagger/v1/swagger.json  
+2017-08-18 12:39:43.927 -04:00 [Debug] Request did not match any routes.
+2017-08-18 12:39:44.266 -04:00 [Debug] Connection id ""0HL76AUT78AH2"" completed keep alive response.
+2017-08-18 12:39:44.266 -04:00 [Information] Request finished in 339.6425ms 200 application/json

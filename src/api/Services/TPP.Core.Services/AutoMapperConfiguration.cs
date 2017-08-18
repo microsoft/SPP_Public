@@ -26,6 +26,7 @@ namespace TPP.Core.Services.Impl
             cfg.AddProfile<WorkoutProfile>();
             cfg.AddProfile<DrillProfile>();
             cfg.AddProfile<SettingsProfile>();
+            cfg.AddProfile<LocationProfile>();
         };
     }
 }
