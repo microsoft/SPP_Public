@@ -20,22 +20,17 @@ These instructions are created to guide in the setup of the Microsoft Sports Per
 
   * Change names in the parameters files to match your organization in sportsperformance.parameters.json:
 
-    Note that some of the services have limitations on length of the names. These are called out in comments in the parameters files. Adjust names for anything starting with sportsperf so the services are still recognized for their intended purpose. Naming convention used should be similar to ssp*YOURORG*api as an example.
+    NOTE: that some of the services have limitations on length of the names. These are called out in comments in the parameters files. Adjust names for anything starting with sportsperf so the services are still recognized for their intended purpose. Naming convention used should be similar to ssp*YOURORG*api as an example.
+
+    NOTE: You will need to supply a SQL Admin user name and password during ARM template execution.
+
+  	NOTE: Uncomment the SQL Firewall section of the ARM Template to enable the "Allow access to Azure services". This option configures the firewall to allow all connections from Azure including connections from the subscriptions of other customers. When selecting this option, make sure your login and user permissions limit access to only authorized users. For more information read the following: [Azure SQL Database server-level and database-level firewall rules](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure)
+
+    This firewall rule is required for the ARM template to create the DB tables and seed with sample data. If you chose not to do this you will have to manually restore the SPPTemplateDBexport.bacpac from SQL Server Management Studio.
 
   * Run the deploy-sportsperformance.ps1
 
     This powershell script will provision all services needed for the SPP API and Database with seeded content. You will need your Azure Subscription ID for the deployment. Follow all prompts. Once the SPP API items are finished you will be able to see them in the Azure Resource group specified. If the code deploy failed please follow the Manual deployment instructions below.
-
-  * Update SQL Administrator password
-    * In the Azure Portal select the Database Server that was created during ARM template execution
-    * Click Reset Password
-    * Enter new password ensuring proper password strength
-    * Go back to the Resource Group where everything was deployed
-    * Open the API App Service that was created by the ARM template
-    * Select Application Settings
-    * Scroll down to Connection Strings and click Show connection string values
-    * Update the password for the TppDbConnection connection string
-    * Click Save
 
 
 ## Manually deploy the API code
