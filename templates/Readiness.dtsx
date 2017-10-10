@@ -1,0 +1,543 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="10/9/2017 7:44:56 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DANNY-DESKTOP"
+  DTS:CreatorName="NORTHAMERICA\dannyg"
+  DTS:Description="SSIS Package Description"
+  DTS:DTSID="{365B9870-A910-47CE-ADD0-850C8B859015}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.0800.90"
+  DTS:LocaleID="1033"
+  DTS:MaxErrorCount="0"
+  DTS:ObjectName="Readiness"
+  DTS:VersionGUID="{5BC74470-F65F-49F2-AEE4-A45778322499}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{ECC243DC-C182-46B9-B958-22EDD52C32DC}"
+      DTS:ObjectName="DestinationConnectionOLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=sppdbwestus.database.windows.net;User ID=sppadmin;Initial Catalog=SPPTemplateDBexport;Provider=SQLNCLI11;Auto Translate=false;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA54Zr8vQwm0GAnkvFzHiCYAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADXPbuyEmckPVAhTQREMcbg4MyAR+6wo2RHT0yatTMuAgAAAAAOgAAAAAIAACAAAADKtapz2V1POp6dggaqINUJZ/yOfPtodXWOTVgJ/EZPxCAAAAD6PVVJQWxhUnIaAz36cZxzL60i/AqjRhwzFcgppwUc4kAAAAAouTyXQ3+g2DBMP5MiXWidd7htqikbBaKhSgAxtC4UxfpcJ0rjXhbG5mwsJRjNhPABE7/eZRqKoQ0VuqBq2hWO</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SourceConnectionExcel]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{A8D0A871-5BAC-440C-82DB-DBBA768EA332}"
+      DTS:ObjectName="SourceConnectionExcel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Microsoft\Projects\SPP\SPP_Public\templates\Readiness.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task 1"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:DelayValidation="True"
+      DTS:DTSID="{E9F62095-199E-4930-9411-5FA47B788B78}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:FailPackageOnFailure="True"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task 1"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          defaultBufferSize="3145728"
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task 1\Destination - Readiness$"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Destination - Readiness$"
+              usesDispositions="true"
+              validateExternalMetadata="False"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Readiness$]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">true</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 1\Destination - Readiness$.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].Columns[Date]"
+                      cachedDataType="date"
+                      cachedName="Date"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].ExternalColumns[Date]"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[Date]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].Columns[Score]"
+                      cachedDataType="r8"
+                      cachedName="Score"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].ExternalColumns[Score]"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[Score]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].Columns[Fatigue]"
+                      cachedDataType="r8"
+                      cachedName="Fatigue"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].ExternalColumns[Fatigue]"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[Fatigue]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].Columns[Mood]"
+                      cachedDataType="r8"
+                      cachedName="Mood"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].ExternalColumns[Mood]"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[Mood]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].Columns[Soreness]"
+                      cachedDataType="r8"
+                      cachedName="Soreness"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].ExternalColumns[Soreness]"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[Soreness]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].Columns[Stress]"
+                      cachedDataType="r8"
+                      cachedName="Stress"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].ExternalColumns[Stress]"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[Stress]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].Columns[SleepQuality]"
+                      cachedDataType="r8"
+                      cachedName="SleepQuality"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].ExternalColumns[SleepQuality]"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[SleepQuality]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].Columns[SleepHours]"
+                      cachedDataType="r8"
+                      cachedName="SleepHours"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].ExternalColumns[SleepHours]"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[SleepHours]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].Columns[FullName]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="FullName"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].ExternalColumns[FullName]"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[FullName]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].ExternalColumns[Date]"
+                      dataType="date"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].ExternalColumns[Score]"
+                      dataType="r8"
+                      name="Score" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].ExternalColumns[Fatigue]"
+                      dataType="r8"
+                      name="Fatigue" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].ExternalColumns[Mood]"
+                      dataType="r8"
+                      name="Mood" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].ExternalColumns[Soreness]"
+                      dataType="r8"
+                      name="Soreness" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].ExternalColumns[Stress]"
+                      dataType="r8"
+                      name="Stress" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].ExternalColumns[SleepQuality]"
+                      dataType="r8"
+                      name="SleepQuality" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].ExternalColumns[SleepHours]"
+                      dataType="r8"
+                      name="SleepHours" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input].ExternalColumns[FullName]"
+                      dataType="wstr"
+                      length="255"
+                      name="FullName" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Destination - Readiness$.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Destination - Readiness$.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Destination - Readiness$.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Destination - Readiness$.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Destination - Readiness$.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\Source - Readiness$"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Source - Readiness$"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Readiness$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 1\Source - Readiness$.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SourceConnectionExcel]"
+                  connectionManagerRefId="Package.ConnectionManagers[SourceConnectionExcel]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[Date]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].ExternalColumns[Date]"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[Date]"
+                      name="Date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[Score]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].ExternalColumns[Score]"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[Score]"
+                      name="Score"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[Fatigue]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].ExternalColumns[Fatigue]"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[Fatigue]"
+                      name="Fatigue"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[Mood]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].ExternalColumns[Mood]"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[Mood]"
+                      name="Mood"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[Soreness]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].ExternalColumns[Soreness]"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[Soreness]"
+                      name="Soreness"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[Stress]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].ExternalColumns[Stress]"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[Stress]"
+                      name="Stress"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[SleepQuality]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].ExternalColumns[SleepQuality]"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[SleepQuality]"
+                      name="SleepQuality"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[SleepHours]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].ExternalColumns[SleepHours]"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[SleepHours]"
+                      name="SleepHours"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[FullName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].ExternalColumns[FullName]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].Columns[FullName]"
+                      name="FullName"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].ExternalColumns[Date]"
+                      dataType="date"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].ExternalColumns[Score]"
+                      dataType="r8"
+                      name="Score" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].ExternalColumns[Fatigue]"
+                      dataType="r8"
+                      name="Fatigue" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].ExternalColumns[Mood]"
+                      dataType="r8"
+                      name="Mood" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].ExternalColumns[Soreness]"
+                      dataType="r8"
+                      name="Soreness" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].ExternalColumns[Stress]"
+                      dataType="r8"
+                      name="Stress" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].ExternalColumns[SleepQuality]"
+                      dataType="r8"
+                      name="SleepQuality" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].ExternalColumns[SleepHours]"
+                      dataType="r8"
+                      name="SleepHours" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output].ExternalColumns[FullName]"
+                      dataType="wstr"
+                      length="255"
+                      name="FullName" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Error Output].Columns[Date]"
+                      dataType="date"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Error Output].Columns[Date]"
+                      name="Date" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Error Output].Columns[Score]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Error Output].Columns[Score]"
+                      name="Score" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Error Output].Columns[Fatigue]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Error Output].Columns[Fatigue]"
+                      name="Fatigue" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Error Output].Columns[Mood]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Error Output].Columns[Mood]"
+                      name="Mood" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Error Output].Columns[Soreness]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Error Output].Columns[Soreness]"
+                      name="Soreness" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Error Output].Columns[Stress]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Error Output].Columns[Stress]"
+                      name="Stress" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Error Output].Columns[SleepQuality]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Error Output].Columns[SleepQuality]"
+                      name="SleepQuality" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Error Output].Columns[SleepHours]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Error Output].Columns[SleepHours]"
+                      name="SleepHours" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Error Output].Columns[FullName]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Error Output].Columns[FullName]"
+                      name="FullName" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task 1.Paths[Excel Source Output]"
+              endId="Package\Data Flow Task 1\Destination - Readiness$.Inputs[Destination Input]"
+              name="Excel Source Output"
+              startId="Package\Data Flow Task 1\Source - Readiness$.Outputs[Excel Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Preparation SQL Task 1"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:DTSID="{338A70DB-1A25-4CFE-9393-A6880FB4773E}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:FailPackageOnFailure="True"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Preparation SQL Task 1"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{ECC243DC-C182-46B9-B958-22EDD52C32DC}"
+          SQLTask:SqlStatementSource="CREATE TABLE [dbo].[Readiness$] (&#xA;[Date] datetime,&#xA;[Score] float,&#xA;[Fatigue] float,&#xA;[Mood] float,&#xA;[Soreness] float,&#xA;[Stress] float,&#xA;[SleepQuality] float,&#xA;[SleepHours] float,&#xA;[FullName] nvarchar(255)&#xA;)&#xA;GO&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[{B46A823E-4C2B-42CB-AF74-AB70081AECF4\}]"
+      DTS:CreationName=""
+      DTS:DTSID="{B46A823E-4C2B-42CB-AF74-AB70081AECF4}"
+      DTS:From="Package\Preparation SQL Task 1"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="{B46A823E-4C2B-42CB-AF74-AB70081AECF4}"
+      DTS:To="Package\Data Flow Task 1" />
+  </DTS:PrecedenceConstraints>
+</DTS:Executable>

@@ -1,0 +1,64 @@
+﻿<Page
+    x:Class="ClientApp.Views.LandingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:ClientApp.Controls"
+    DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource MediumWindowSnapPoint}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="ContentContainer.Margin" Value="12,0,24,0"/>
+                        <Setter Target="title.Style" Value="{StaticResource PageTitleTextBlockStyle}"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource MinWindowSnapPoint}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="ContentContainer.Margin" Value="0,0,12,0"/>
+                        <Setter Target="title.Style" Value="{StaticResource NarrowPageTitleTextBlockStyle}"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <controls:PageHeader x:Name="pageHeader">
+            <controls:PageHeader.HeaderContent>
+                <TextBlock x:Name="title" Style="{StaticResource PageTitleTextBlockStyle}" Text="SPP Sample App Overview"/>
+            </controls:PageHeader.HeaderContent>
+        </controls:PageHeader>
+
+        <ScrollViewer Grid.Row="1" EntranceNavigationTransitionInfo.IsTargetElement="True" IsTabStop="True" Margin="12,4,0,0">
+            <StackPanel x:Name="ContentContainer" Margin="12,0,24,0">
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,4">This sample demonstrates a universal Windows app signing to SPP AD and retrieving a sample list of players assigned to the same team as the signed user.</TextBlock>
+
+                <TextBlock Style="{StaticResource SubtitleTextBlockStyle}" Margin="0,12,0,4">Overview</TextBlock>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,4">This sample is intended to explore the implications of using the SPP authentication flow with Azure AD B2B and B2C services. 
+                    We'll walk through code changes necessary to build an app that can authenticate and connect to SPP APIs.
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource SubtitleTextBlockStyle}" Margin="0,12,0,4">Things to do:</TextBlock>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,8"> 1) Register the downstream SPP Web API</TextBlock>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,8"> 2) Register the Client Application</TextBlock>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,8"> 3) Add user to the Azure AD B2C tenant</TextBlock>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,8"> 4) Create sign-in and sign-up policies</TextBlock>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}" Margin="0,8"> 5) Configure AD settings in the client and SPP Web API applications.</TextBlock>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
