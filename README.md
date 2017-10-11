@@ -102,31 +102,6 @@ Here are the steps to get your database restored:
 
 Check to see if it is complete by connecting to the server with SQL Server Management Studio. Assuming the database was successfully imported and restored, you can then connect directly to the SQL Database from Power BI and begin to create your Performance Analytics dashboards. 
 
-### Use SSIS to Import Excel files into an Azure SQL Database
-
-Now that you have your database loaded into your personal subscription, we can use SQL Server Management Studio to load in Excel files into a database.
-
-The files that we will be importing are:
-
-* Catapult – contains information about a player’s locomotor activity during games and practice
-* Hydration – contains information about a player’s subjective perception of their hydration level
-* Readiness – contains information about aplayer’s subjective perception of their wellness
-* Games – contains information about the games that we have data for (a subset of the 2016 season)
-* Players – contains player names and positional information
-* Training Loads – contains players’ subjective perceptions on the intensity of training…otherwise known as Training Load RPE
-* SorenessSites – contains players’ subjective perceptions on their muscular soreness, specifically which muscle groups feel sore and therespective intensity of soreness. 
-
-The steps to do this are as follows: 
-
-* Connect to your server and then right-click on the database you just exported. You will find the ability to Import Data.
-* As you go through the Import Wizard, you will choose: Data Source: Microsoft Excel, then click Next Destination: SQL Server Native Client 11.0, then click Next.
-* Select Copy data from one or more tables or views, then click Next. 
-* Click Next as we will store the table name in the database as the file name, then click Next. 
-* Run Immediately, click Next. 
-* Click Finish to run the import job. After it completes, SSIS will add a “$” sign to the table name.
-* Right-click on the table name in the Object Explorer to rename the table to exclude the “$”. 
-
-At the end, you should have 7 new external tables that weren’t a part of the original import.   
 
 ### Building Power BI Reports
 
