@@ -1,7 +1,4 @@
-﻿// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT license.
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Net.Http;
@@ -116,7 +113,7 @@ namespace TPP.UnitTests
                     EndDate = DateTime.UtcNow.AddYears(1)
                 };
 
-                var apiCallUrl = $"{this._apibaseUrl}/api/v2/auth/user";
+                var apiCallUrl = $"{this._apibaseUrl}/api/v1/auth/user";
                 var startTime = DateTime.UtcNow;
                 var result = await PostItemAsync<UserDto>(apiCallUrl, newUser);
                 if (result.IsSuccessStatusCode)
@@ -143,7 +140,7 @@ namespace TPP.UnitTests
 
                 //Authenticate user
                 var aadId = "93621dc3-43c1-4ade-adaa-9e8955931772";
-                apiCallUrl = $"{this._apibaseUrl}/api/v2/auth/{aadId}";
+                apiCallUrl = $"{this._apibaseUrl}/api/v1/auth/{aadId}";
                 startTime = DateTime.UtcNow;
                 var teamId = await GetItemAsync<int>(apiCallUrl);
                 if (teamId > 0)
@@ -165,7 +162,7 @@ namespace TPP.UnitTests
 
                 //Retrieve
                 int userId = 9780;
-                apiCallUrl = $"{this._apibaseUrl}/api/v2/auth/user/{userId}";
+                apiCallUrl = $"{this._apibaseUrl}/api/v1/auth/user/{userId}";
                 startTime = DateTime.UtcNow;
                 var userDto = await GetItemAsync<UserDto>(apiCallUrl);
                 if (userDto != null)
@@ -190,7 +187,7 @@ namespace TPP.UnitTests
                 var user = await _svcAuth.GetUser(userId);
                 user.MiddleName = $"MiddleName#{ind}";
                 user.TeamId = 1;
-                apiCallUrl = $"{this._apibaseUrl}/api/v2/auth/user/update";
+                apiCallUrl = $"{this._apibaseUrl}/api/v1/auth/user/update";
                 startTime = DateTime.UtcNow;
                 result = await PostItemAsync<UserDto>(apiCallUrl, user);
                 if (result.IsSuccessStatusCode)
@@ -273,7 +270,7 @@ namespace TPP.UnitTests
                         }}
                 };
 
-                var apiCallUrl = $"{this._apibaseUrl}/api/v2/practices";
+                var apiCallUrl = $"{this._apibaseUrl}/api/v1/practices";
                 var startTime = DateTime.UtcNow;
                 var result = await PostItemAsync<PracticeDto>(apiCallUrl, practice);
                 if (result.IsSuccessStatusCode)
@@ -300,7 +297,7 @@ namespace TPP.UnitTests
 
 
                 //Retrieve all practices
-                apiCallUrl = $"{this._apibaseUrl}/api/v2/practices";
+                apiCallUrl = $"{this._apibaseUrl}/api/v1/practices";
                 startTime = DateTime.UtcNow;
                 var practices = await GetItemAsync<List<PracticeDto>>(apiCallUrl);
                 if (practices != null)
@@ -322,7 +319,7 @@ namespace TPP.UnitTests
 
                 //Retrieve the practice
                 int id = 1;
-                apiCallUrl = $"{this._apibaseUrl}/api/v2/practices/id/{id}";
+                apiCallUrl = $"{this._apibaseUrl}/api/v1/practices/id/{id}";
                 startTime = DateTime.UtcNow;
                 var dtoPractice = await GetItemAsync<PracticeDto>(apiCallUrl);
                 if (dtoPractice != null)
@@ -346,7 +343,7 @@ namespace TPP.UnitTests
                 ind = random.Next(1, 1000);
                 dtoPractice = dtoPractice ?? await _svcPractice.GetPractice(1);
                 dtoPractice.IsModified = true;
-                apiCallUrl = $"{this._apibaseUrl}/api/v2/practices/update";
+                apiCallUrl = $"{this._apibaseUrl}/api/v1/practices/update";
                 startTime = DateTime.UtcNow;
                 result = await PostItemAsync<PracticeDto>(apiCallUrl, dtoPractice);
                 if (result.IsSuccessStatusCode)
@@ -412,7 +409,7 @@ namespace TPP.UnitTests
                 };
 
 
-                var apiCallUrl = $"{this._apibaseUrl}/api/v2/questionnaires";
+                var apiCallUrl = $"{this._apibaseUrl}/api/v1/questionnaires";
                 var startTime = DateTime.UtcNow;
                 var result = await PostItemAsync<AthleteQuestionnaireDto>(apiCallUrl, questionnaire);
                 if (result.IsSuccessStatusCode)
@@ -440,7 +437,7 @@ namespace TPP.UnitTests
 
                 //Retrieve all session's questionnaires
                 var sessionId = 1;
-                apiCallUrl = $"{this._apibaseUrl}/api/v2/questionnaires/list/{sessionId}";
+                apiCallUrl = $"{this._apibaseUrl}/api/v1/questionnaires/list/{sessionId}";
                 startTime = DateTime.UtcNow;
                 var questionnaires = await GetItemAsync<List<AthleteQuestionnaireDto>>(apiCallUrl);
                 if (questionnaires != null)
@@ -462,7 +459,7 @@ namespace TPP.UnitTests
 
                 //Retrieve the practice
                 int id = 1;
-                apiCallUrl = $"{this._apibaseUrl}/api/v2/questionnaires/entity/{id}";
+                apiCallUrl = $"{this._apibaseUrl}/api/v1/questionnaires/entity/{id}";
                 startTime = DateTime.UtcNow;
                 var dtoQuest = await GetItemAsync<AthleteQuestionnaireDto>(apiCallUrl);
                 if (dtoQuest != null)
@@ -486,7 +483,7 @@ namespace TPP.UnitTests
                 ind = random.Next(1, 1000);
                 dtoQuest = dtoQuest ?? await _svcQuestionnaire.GetQuestionnaire(1);
                 dtoQuest.IsEnabled = true;
-                apiCallUrl = $"{this._apibaseUrl}/api/v2/questionnaires/update";
+                apiCallUrl = $"{this._apibaseUrl}/api/v1/questionnaires/update";
                 startTime = DateTime.UtcNow;
                 result = await PostItemAsync<AthleteQuestionnaireDto>(apiCallUrl, dtoQuest);
                 if (result.IsSuccessStatusCode)

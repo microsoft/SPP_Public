@@ -15,6 +15,7 @@ namespace TPP.UnitTests
         public BaseDbContext Context { get; }
         public IConfigurationRoot Configuration { get; }
 
+        public const string ActiveTenant = "DBTenants:ActiveTenant";
         public DataInitFixture()
         {
             var builder =
@@ -24,11 +25,8 @@ namespace TPP.UnitTests
             Configuration = builder.Build();
 
             //Get SQL connection string
-#if LOCALDB
-            var dbConnection = new SqlConnection(Configuration["ConnectionStrings:TppLocalDbConnection"]);
-#else
-            var dbConnection = new SqlConnection(Configuration["ConnectionStrings:TppDbConnection"]);
-#endif
+            var dbConnection = new SqlConnection(Configuration[$"DBTenants:{Configuration[ActiveTenant]}:TppDbConnection"]);
+
             //Initialize DbContext in memory
             var optionBuiler = new DbContextOptionsBuilder();
             optionBuiler.UseInMemoryDatabase();

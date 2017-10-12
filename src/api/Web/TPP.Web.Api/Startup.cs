@@ -12,7 +12,6 @@ using Serilog;
 using Swashbuckle.AspNetCore.Swagger;
 using TPP.Core.Data;
 using TPP.Api.Configuration;
-using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 
 namespace TPP.Api
 {

@@ -1,7 +1,4 @@
-﻿// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT license.
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using TPP.Core.Data.Entities;
 using TPP.Core.Services.Impl;
@@ -36,7 +33,7 @@ namespace TPP.UnitTests
 
         [Theory]
         [InlineData(0)] //Unknown - Fail
-        public async void GetPracticeTest(int id)
+        public async void GetPracticeTestToFail(int id)
         {
             var practice = await _service.GetPractice(id);
             Assert.NotNull(practice);
@@ -70,8 +67,8 @@ namespace TPP.UnitTests
 
 
         [Theory]
-        [InlineData(1)] //PracticeId
-        public async void GetPractice(int practiceId)
+        [InlineData(0)] //PracticeId
+        public async void GetPracticeTest(int practiceId)
         {
             try
             {
