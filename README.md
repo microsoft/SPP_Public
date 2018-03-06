@@ -1,3 +1,4 @@
+
 # Getting Started with the Sports Performance Platform
 
 ## Overview
@@ -11,6 +12,7 @@ Recently, at the Hashtag Sports conference we launched the Sports Performance Pl
 * https://www.engadget.com/2017/06/27/microsoft-sports-performance-platform/
 * https://blogs.microsoft.com/blog/2017/06/27/sports-performance-platform-puts-data-play-action-athletes-teams/
 * https://mspoweruser.com/microsoft-launches-sports-performance-platform-new-analytics-solution-help-athletes-sports-teams-make-better-decisions/
+* https://chyronhego.com/chyronhegos-tracab-delivers-player-tracking-component-microsoft-sports-performance-platform/
 
 As a part of this launch, we mentioned that we would open source a portion of the code-base to the community. The goal of this was tohelp inspire and grow a community of like-minded sports geeks like us to play around in this new space, learn how to use the Sports Performance Platform and build some models that help evolve sports as a whole. 
 
